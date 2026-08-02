@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Schedule a Demo — BigBrother Analytics</title>
+<link rel="stylesheet" href="assets/css/style.css">
+<style>
+  @media(max-width:768px){
+    .demo-grid form > div[style*="grid-template-columns:1fr 1fr"]{
+      grid-template-columns:1fr !important;
+    }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <nav class="wrap">
+    <a href="index.html" class="logo"><span class="dot">BB</span>BigBrother<span class="mut" style="font-weight:400">Analytics</span></a>
+    <div class="navlinks">
+      <a href="platform.html">Platform</a>
+      <a href="solutions.html">Solutions</a>
+      <div class="nav-dropdown">
+        <a href="products.html">Products</a>
+        <div class="dropdown-menu">
+          <a href="bb-white.html">BBA White</a>
+          <a href="ad-scanner.html">AdScanner</a>
+          <a href="prompt-engine.html">Prompt Engine</a>
+        </div>
+      </div>
+      <a href="pricing.html">Pricing</a>
+      <a href="customers.html">Customers</a>
+      <div class="nav-dropdown">
+        <a href="resources.html">Resources</a>
+        <div class="dropdown-menu">
+          <a href="resources.html">Blog</a>
+          <a href="resources.html">Case Studies</a>
+          <a href="resources.html">Documentation</a>
+        </div>
+      </div>
+      <a href="about.html">About</a>
+    </div>
+    <div class="navcta">
+      <a href="schedule-demo.html" class="btn btn-ghost">Sign in</a>
+      <a href="schedule-demo.html" class="btn btn-primary">Schedule a Demo</a>
+    </div>
+    <button class="nav-toggle" aria-label="Toggle menu">
+      <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
+    </button>
+  </nav>
+  <div class="mobile-menu">
+    <div class="mobile-menu-inner wrap">
+      <a href="platform.html">Platform</a>
+      <a href="solutions.html">Solutions</a>
+      <a href="products.html">Products</a>
+      <a href="bb-white.html">BBA White</a>
+      <a href="ad-scanner.html">AdScanner</a>
+      <a href="prompt-engine.html">Prompt Engine</a>
+      <a href="pricing.html">Pricing</a>
+      <a href="customers.html">Customers</a>
+      <a href="resources.html">Resources</a>
+      <a href="about.html">About</a>
+      <div class="mobile-menu-cta">
+        <a href="schedule-demo.html" class="btn btn-ghost" style="width:100%;justify-content:center">Sign in</a>
+        <a href="schedule-demo.html" class="btn btn-primary" style="width:100%;justify-content:center">Schedule a Demo</a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- PAGE HERO -->
+<section class="page-hero" style="padding:80px 0 60px;text-align:center;background:linear-gradient(135deg,#f1f3fd 0%,#eeecfb 100%)">
+  <div class="wrap">
+    <h1 class="title" style="margin-bottom:18px">Schedule a Demo</h1>
+    <p class="lead" style="max-width:620px;margin:0 auto;color:var(--mut)">See BigBrother AI in action. Pick a time that works for you — we'll tailor the demo to your industry and needs.</p>
+  </div>
+</section>
+
+<!-- DEMO FORM SECTION -->
+<section style="padding:80px 0">
+  <div class="wrap">
+    <div style="display:grid;grid-template-columns:1.4fr 1fr;gap:48px;align-items:start" class="demo-grid">
+
+      <!-- LEFT — FORM -->
+      <div style="background:var(--surface);border:1px solid var(--border);border-radius:16px;padding:48px 40px">
+        <h2 style="font-size:24px;margin-bottom:6px">Request Your Demo</h2>
+        <p class="mut" style="font-size:14px;margin-bottom:32px">Fill in the details below and we'll get back to you within 24 hours.</p>
+
+        <form style="display:flex;flex-direction:column;gap:20px" action="#" method="post">
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px">
+            <div>
+              <label for="full-name" style="display:block;font-size:13px;color:var(--mut);margin-bottom:6px">Full Name *</label>
+              <input id="full-name" name="full_name" type="text" required placeholder="John Doe" style="width:100%;padding:12px 14px;border-radius:10px;border:1px solid var(--border);background:var(--bg);color:var(--text);font-size:14px;box-sizing:border-box">
+            </div>
+            <div>
+              <label for="work-email" style="display:block;font-size:13px;color:var(--mut);margin-bottom:6px">Work Email *</label>
+              <input id="work-email" name="work_email" type="email" required placeholder="john@company.com" style="width:100%;padding:12px 14px;border-radius:10px;border:1px solid var(--border);background:var(--bg);color:var(--text);font-size:14px;box-sizing:border-box">
+            </div>
+          </div>
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px">
+            <div>
+              <label for="company-name" style="display:block;font-size:13px;color:var(--mut);margin-bottom:6px">Company Name *</label>
+              <input id="company-name" name="company_name" type="text" required placeholder="Acme Corp" style="width:100%;padding:12px 14px;border-radius:10px;border:1px solid var(--border);background:var(--bg);color:var(--text);font-size:14px;box-sizing:border-box">
+            </div>
+            <div>
+              <label for="phone" style="display:block;font-size:13px;color:var(--mut);margin-bottom:6px">Phone Number *</label>
+              <input id="phone" name="phone" type="tel" required placeholder="+971 XX XXX XXXX" style="width:100%;padding:12px 14px;border-radius:10px;border:1px solid var(--border);background:var(--bg);color:var(--text);font-size:14px;box-sizing:border-box">
+            </div>
+          </div>
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px">
+            <div>
+              <label for="job-title" style="display:block;font-size:13px;color:var(--mut);margin-bottom:6px">Job Title *</label>
+              <input id="job-title" name="job_title" type="text" required placeholder="Marketing Director" style="width:100%;padding:12px 14px;border-radius:10px;border:1px solid var(--border);background:var(--bg);color:var(--text);font-size:14px;box-sizing:border-box">
+            </div>
+            <div>
+              <label for="company-size" style="display:block;font-size:13px;color:var(--mut);margin-bottom:6px">Company Size *</label>
+              <select id="company-size" name="company_size" required style="width:100%;padding:12px 14px;border-radius:10px;border:1px solid var(--border);background:var(--bg);color:var(--text);font-size:14px;box-sizing:border-box">
+                <option value="" disabled selected>Select company size</option>
+                <option value="1-10">1–10</option>
+                <option value="11-50">11–50</option>
+                <option value="51-200">51–200</option>
+                <option value="201-1000">201–1,000</option>
+                <option value="1000+">1,000+</option>
+              </select>
+            </div>
+          </div>
+          <div>
+            <label for="industry" style="display:block;font-size:13px;color:var(--mut);margin-bottom:6px">Industry *</label>
+            <select id="industry" name="industry" required style="width:100%;padding:12px 14px;border-radius:10px;border:1px solid var(--border);background:var(--bg);color:var(--text);font-size:14px;box-sizing:border-box">
+              <option value="" disabled selected>Select your industry</option>
+              <option value="Agency">Agency</option>
+              <option value="E-commerce">E-commerce</option>
+              <option value="SaaS/Technology">SaaS / Technology</option>
+              <option value="Healthcare">Healthcare</option>
+              <option value="Finance">Finance</option>
+              <option value="Media/Publishing">Media / Publishing</option>
+              <option value="Government">Government</option>
+              <option value="Other">Other</option>
+            </select>
+          </div>
+          <div>
+            <span style="display:block;font-size:13px;color:var(--mut);margin-bottom:10px">Products Interested In *</span>
+            <div style="display:flex;flex-wrap:wrap;gap:16px 32px">
+              <label style="display:flex;align-items:center;gap:8px;font-size:14px;cursor:pointer">
+                <input type="checkbox" name="products" value="BigBrother AI — White" style="accent-color:var(--accent)"> BigBrother AI — White
+              </label>
+              <label style="display:flex;align-items:center;gap:8px;font-size:14px;cursor:pointer">
+                <input type="checkbox" name="products" value="AdScanner" style="accent-color:var(--accent)"> AdScanner
+              </label>
+              <label style="display:flex;align-items:center;gap:8px;font-size:14px;cursor:pointer">
+                <input type="checkbox" name="products" value="Prompt Engine" style="accent-color:var(--accent)"> Prompt Engine
+              </label>
+              <label style="display:flex;align-items:center;gap:8px;font-size:14px;cursor:pointer">
+                <input type="checkbox" name="products" value="All Products" style="accent-color:var(--accent)"> All Products
+              </label>
+            </div>
+          </div>
+          <div>
+            <label for="message" style="display:block;font-size:13px;color:var(--mut);margin-bottom:6px">Message</label>
+            <textarea id="message" name="message" rows="4" placeholder="Tell us about your monitoring needs..." style="width:100%;padding:12px 14px;border-radius:10px;border:1px solid var(--border);background:var(--bg);color:var(--text);font-size:14px;box-sizing:border-box;resize:vertical"></textarea>
+          </div>
+          <button class="btn btn-primary" type="submit" style="width:100%;padding:14px;font-size:15px">Book My Demo</button>
+          <div class="fnote" style="text-align:center">No credit card required. Free 14-day trial included.</div>
+        </form>
+      </div>
+
+      <!-- RIGHT — SIDEBAR -->
+      <div style="display:flex;flex-direction:column;gap:32px">
+
+        <!-- What to Expect -->
+        <div style="background:var(--surface);border:1px solid var(--border);border-radius:16px;padding:32px 28px">
+          <h3 style="font-size:18px;margin-bottom:20px">What to Expect</h3>
+          <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:14px">
+            <li style="display:flex;align-items:flex-start;gap:10px;font-size:14px;color:var(--text)">
+              <span style="color:#22c55e;font-size:16px;line-height:1">&#10003;</span>
+              Personalized 30-minute demo
+            </li>
+            <li style="display:flex;align-items:flex-start;gap:10px;font-size:14px;color:var(--text)">
+              <span style="color:#22c55e;font-size:16px;line-height:1">&#10003;</span>
+              Tailored to your industry
+            </li>
+            <li style="display:flex;align-items:flex-start;gap:10px;font-size:14px;color:var(--text)">
+              <span style="color:#22c55e;font-size:16px;line-height:1">&#10003;</span>
+              Live Q&A with our team
+            </li>
+            <li style="display:flex;align-items:flex-start;gap:10px;font-size:14px;color:var(--text)">
+              <span style="color:#22c55e;font-size:16px;line-height:1">&#10003;</span>
+              Free trial setup included
+            </li>
+          </ul>
+        </div>
+
+        <!-- Contact -->
+        <div style="background:var(--surface);border:1px solid var(--border);border-radius:16px;padding:32px 28px">
+          <h3 style="font-size:18px;margin-bottom:20px">Or Reach Us Directly</h3>
+          <div style="display:flex;flex-direction:column;gap:16px;font-size:14px">
+            <div style="display:flex;align-items:flex-start;gap:10px">
+              <span style="color:var(--accent);font-size:16px">&#9993;</span>
+              <div>
+                <div style="color:var(--mut);font-size:12px;margin-bottom:2px">Email</div>
+                <a href="mailto:hello@bigbrotherai.com" style="color:var(--text);text-decoration:none">hello@bigbrotherai.com</a>
+              </div>
+            </div>
+            <div style="display:flex;align-items:flex-start;gap:10px">
+              <span style="color:var(--accent);font-size:16px">&#9742;</span>
+              <div>
+                <div style="color:var(--mut);font-size:12px;margin-bottom:2px">Phone</div>
+                <span>+971 XX XXX XXXX</span>
+              </div>
+            </div>
+            <div style="display:flex;align-items:flex-start;gap:10px">
+              <span style="color:var(--accent);font-size:16px">&#9873;</span>
+              <div>
+                <div style="color:var(--mut);font-size:12px;margin-bottom:2px">Location</div>
+                <span>Dubai, UAE</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Trust Badges -->
+        <div style="background:var(--surface);border:1px solid var(--border);border-radius:16px;padding:24px 28px">
+          <div style="display:flex;flex-wrap:wrap;gap:12px">
+            <span style="display:inline-flex;align-items:center;gap:6px;padding:8px 14px;border-radius:8px;background:rgba(34,197,94,0.08);border:1px solid rgba(34,197,94,0.2);font-size:12px;font-weight:500;color:#22c55e">&#128274; SOC 2 Compliant</span>
+            <span style="display:inline-flex;align-items:center;gap:6px;padding:8px 14px;border-radius:8px;background:rgba(99,102,241,0.08);border:1px solid rgba(99,102,241,0.2);font-size:12px;font-weight:500;color:#6366f1">&#9854; GDPR Ready</span>
+            <span style="display:inline-flex;align-items:center;gap:6px;padding:8px 14px;border-radius:8px;background:rgba(168,85,247,0.08);border:1px solid rgba(168,85,247,0.2);font-size:12px;font-weight:500;color:#a855f7">&#128273; 256-bit Encryption</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SOCIAL PROOF -->
+<section style="padding:48px 0;border-top:1px solid var(--border)">
+  <div class="wrap" style="text-align:center">
+    <p class="mut" style="font-size:14px;margin-bottom:28px;letter-spacing:0.5px;text-transform:uppercase">Trusted by 200+ companies</p>
+    <div style="display:flex;justify-content:center;align-items:center;flex-wrap:wrap;gap:24px">
+      <div style="width:120px;height:40px;border-radius:8px;background:var(--surface);border:1px solid var(--border);opacity:0.5"></div>
+      <div style="width:120px;height:40px;border-radius:8px;background:var(--surface);border:1px solid var(--border);opacity:0.5"></div>
+      <div style="width:120px;height:40px;border-radius:8px;background:var(--surface);border:1px solid var(--border);opacity:0.5"></div>
+      <div style="width:120px;height:40px;border-radius:8px;background:var(--surface);border:1px solid var(--border);opacity:0.5"></div>
+      <div style="width:120px;height:40px;border-radius:8px;background:var(--surface);border:1px solid var(--border);opacity:0.5"></div>
+      <div style="width:120px;height:40px;border-radius:8px;background:var(--surface);border:1px solid var(--border);opacity:0.5"></div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="fgrid">
+      <div>
+        <a href="index.html" class="logo" style="margin-bottom:14px"><span class="dot">BB</span>BigBrother<span class="mut" style="font-weight:400">Analytics</span></a>
+        <p class="mut" style="font-size:14px;max-width:280px">AI-powered data intelligence for businesses and governments. We collect, analyze, and visualize the data that matters for you.</p>
+      </div>
+      <div>
+        <h4>Platform</h4>
+        <a href="solutions.html">Industry Monitoring</a><a href="solutions.html">Brand Listening</a>
+        <a href="solutions.html">TV Monitoring</a><a href="solutions.html">Buying Cycle</a>
+      </div>
+      <div>
+        <h4>Products</h4>
+        <a href="bb-white.html">BBA White</a><a href="ad-scanner.html">AdScanner</a>
+        <a href="prompt-engine.html">Prompt Engine</a><a href="pricing.html">Pricing</a>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <a href="customers.html">Customers</a><a href="resources.html">Resources</a>
+        <a href="about.html">About</a><a href="schedule-demo.html">Schedule a Demo</a>
+      </div>
+    </div>
+    <div class="fbottom">
+      <div>&copy; 2025 BigBrother Analytics &amp; its derivatives. All rights reserved.</div>
+      <div class="soc">
+        <a href="#">Facebook</a><a href="#">LinkedIn</a>
+        <a href="#">Terms</a><a href="#">Privacy</a><a href="#">GDPR</a><a href="#">Sitemap</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script defer src="assets/js/main.js"></script>
+</body>
+</html>
