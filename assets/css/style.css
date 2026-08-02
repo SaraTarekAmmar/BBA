@@ -92,6 +92,7 @@ header .wrap,header nav.wrap{display:flex;align-items:center;justify-content:spa
   background:url('../img/bba-logo-black.png') center/contain no-repeat;
   font-size:0;color:transparent;overflow:hidden;white-space:nowrap
 }
+.logo > *{display:none!important}
 .nav-brand{display:inline-flex;align-items:center;gap:10px;font-size:18px;font-weight:600;letter-spacing:-.02em;color:var(--ink)}
 .dot{
   width:34px;height:34px;border-radius:11px;display:inline-grid;place-items:center;

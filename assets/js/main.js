@@ -2,6 +2,13 @@
 
 document.addEventListener('DOMContentLoaded', () => {
 
+  /* ----- Brand logo ----- */
+  document.querySelectorAll('a.logo').forEach(a => {
+    a.setAttribute('aria-label', 'BigBrother Analytics');
+    a.setAttribute('title', 'BigBrother Analytics');
+    a.replaceChildren();
+  });
+
   /* ----- Sticky header / scrolled state ----- */
   const header = document.querySelector('header');
   if (header) {
