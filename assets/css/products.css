@@ -1,5 +1,5 @@
 /* ---------------------------------------------------------
-   Products Hub — page styles
+   Products Hub  -  page styles
    --------------------------------------------------------- */
 
 /* --- Product cards grid --- */
@@ -239,3 +239,4 @@
     grid-template-columns: 1fr;
   }
 }
+

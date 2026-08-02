@@ -1,5 +1,5 @@
 /* =========================================================
-   BigBrother Analytics — design system
+   BigBrother Analytics  -  design system
    ========================================================= */
 @import url('https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap');
 
@@ -442,3 +442,4 @@ footer{background:var(--band);border-top:1px solid var(--line);padding:64px 0 28
   .marquee span{font-size:16px}
   .crisis{flex-direction:column;gap:14px}
 }
+
