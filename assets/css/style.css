@@ -46,6 +46,7 @@ body{
   -webkit-font-smoothing:antialiased;
   overflow-x:hidden;
 }
+html[dir="rtl"] body{direction:rtl}
 ::selection{background:rgba(62,75,168,.14)}
 .wrap,.container{width:100%;max-width:var(--max);margin:0 auto;padding:0 24px}
 section{padding:88px 0}
@@ -117,8 +118,10 @@ header .wrap,header nav.wrap{display:flex;align-items:center;justify-content:spa
 .dropdown-menu a:hover{background:var(--band);color:var(--ink)}
 .dropdown-menu a.active{color:var(--pri);background:var(--tint)}
 .navcta,.nav-cta{display:flex;align-items:center;gap:10px}
+.lang-toggle{min-width:82px;justify-content:center}
 .navcta .btn-ghost,.nav-cta .btn-ghost{padding:11px 20px}
 .navcta .btn,.nav-cta .btn{padding:11px 22px}
+.lang-ar .navcta,.lang-ar .nav-cta,.lang-ar .mobile-menu-cta{direction:rtl}
 .nav-toggle{display:none;color:var(--ink);padding:4px}
 .nav-toggle svg{width:26px;height:26px}
 .mobile-menu{
