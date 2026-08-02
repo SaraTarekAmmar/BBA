@@ -9,6 +9,8 @@ document.addEventListener('DOMContentLoaded', () => {
     a.replaceChildren();
   });
 
+  document.querySelectorAll('.navcta .btn-ghost, .mobile-menu-cta .btn-ghost').forEach(a => a.remove());
+
   /* ----- Sticky header / scrolled state ----- */
   const header = document.querySelector('header');
   if (header) {
