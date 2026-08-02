@@ -87,7 +87,12 @@ header{
 }
 header.scrolled{background:rgba(255,255,255,.94);border-bottom-color:var(--line)}
 header .wrap,header nav.wrap{display:flex;align-items:center;justify-content:space-between;gap:18px;width:100%}
-.logo,.nav-brand{display:inline-flex;align-items:center;gap:10px;font-size:18px;font-weight:600;letter-spacing:-.02em;color:var(--ink)}
+.logo{
+  display:block;width:clamp(210px,24vw,280px);height:54px;flex:none;
+  background:url('../img/bba-logo-black.png') center/contain no-repeat;
+  font-size:0;color:transparent;overflow:hidden;white-space:nowrap
+}
+.nav-brand{display:inline-flex;align-items:center;gap:10px;font-size:18px;font-weight:600;letter-spacing:-.02em;color:var(--ink)}
 .dot{
   width:34px;height:34px;border-radius:11px;display:inline-grid;place-items:center;
   background:linear-gradient(135deg,var(--pri),var(--pri-l));
