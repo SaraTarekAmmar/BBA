@@ -180,7 +180,7 @@
 .comparison-wrap th,
 .comparison-wrap td {
   padding: .9rem 1.2rem;
-  text-align: left;
+  text-align: start;
   border-bottom: 1px solid var(--border);
 }
 
