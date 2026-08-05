@@ -1,4 +1,4 @@
-Loaded 778 translations from main.js
+Loaded 777 translations from main.js
 
 
 [about.html] - All good!

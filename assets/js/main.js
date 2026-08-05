@@ -43,9 +43,9 @@ document.addEventListener('DOMContentLoaded', () => {
       'Get started': 'ابدأ الآن',
       'See Pricing': 'شاهد الأسعار',
       'Start Free Trial': 'ابدأ التجربة المجانية',
-      'Request my demo': 'اطلب عرضي',
-      'Request Your Demo': 'اطلب عرضك التوضيحي',
-      'Book My Demo': 'احجز عرضي',
+      'Request my demo': 'طلب عرض توضيحي',
+      'Request Your Demo': 'طلب عرض توضيحي',
+      'Book My Demo': 'احجز عرضًا توضيحيًا',
       'Book a personalized walkthrough and see how BigBrother works for your industry.': 'احجز جولة مخصصة وشاهد كيف يعمل BigBrother لقطاعك.',
       'See BigBrother analyze your world.': 'شاهد BigBrother وهو يحلل عالمك.',
       'Tell us a little about you and we\'ll set up a walkthrough of the platform, tailored to your industry and the questions you need answered.': 'أخبرنا قليلًا عنك، وسنرتب لك جولة على المنصة مصممة لقطاعك وللأسئلة التي تحتاج إجابة عنها.',
@@ -398,8 +398,8 @@ document.addEventListener('DOMContentLoaded', () => {
       'See how it works': 'شاهد كيف يعمل',
       'Automated Reports': 'التقارير التلقائية',
       'Targeting Insights': 'رؤى الاستهداف',
-      '▲ 6.2% vs last month': '▲ 6.2% مقارنة بالشهر الماضي',
-      '▼ 2.1% vs last month': '▼ 2.1% مقارنة بالشهر الماضي',
+      '6.2% vs last month': '6.2% مقارنة بالشهر الماضي',
+      '2.1% vs last month': '2.1% مقارنة بالشهر الماضي',
       'Free competitive audit': 'تدقيق تنافسي مجاني',
       'See AdScanner in action': 'شاهد AdScanner أثناء العمل',
       'and how it moves the market.': 'وكيف يؤثر ذلك في السوق.',
@@ -478,7 +478,6 @@ document.addEventListener('DOMContentLoaded', () => {
       'Journalist & TV Presenter': 'صحفية ومقدمة برامج تلفزيونية',
       'Dean, AUC School of Business': 'عميد كلية إدارة الأعمال بالجامعة الأمريكية بالقاهرة',
       'Former Director, Goldman Sachs': 'المدير السابق في جولدمان ساكس',
-      'Regional Director, Google MENA': 'المدير الإقليمي لجوجل في الشرق الأوسط ونواحيها',
       'Regional Director, Google MENA': 'المدير الإقليمي لجوجل في الشرق الأوسط وشمال أفريقيا',
       'CMO, TNC · Al Ahly Real Estate': 'رئيس قطاع التسويق في TNC · الأهلي العقارية',
       'Founder & Chairperson, Ahl Masr Foundation': 'مؤسسة ورئيسة مجلس إدارة مؤسسة أهل مصر',
@@ -842,8 +841,7 @@ document.addEventListener('DOMContentLoaded', () => {
       'Score: 8.4 / 10': 'النتيجة: 8.4 / 10',
       'Sentiment': 'المشاعر',
       '52%': '52%',
-      'Watch': 'مراقبة',
-      '✍️': '✍️'
+       'Watch': 'مراقبة'
     }
   };
 
@@ -873,8 +871,16 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const textFor = (source, lang) => {
     if (lang === 'en') return source;
+    const trimmed = source.trim();
+    if (!trimmed) return source;
+    const leadingWs = source.match(/^\s*/)[0];
+    const trailingWs = source.match(/\s*$/)[0];
     const key = normalize(source);
-    return copy[lang]?.[key] || source;
+    const translated = copy[lang]?.[key];
+    if (translated) {
+      return leadingWs + translated + trailingWs;
+    }
+    return source;
   };
 
   const translateTree = (root, lang) => {
@@ -1123,4 +1129,27 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
   });
+
+  /* ----- Dynamic Lucide Icon Loader ----- */
+  const loadLucide = () => {
+    if (window.lucide) {
+      window.lucide.createIcons();
+      return;
+    }
+    const script = document.createElement('script');
+    script.src = 'https://unpkg.com/lucide@latest';
+    script.onload = () => {
+      window.lucide.createIcons();
+    };
+    document.head.appendChild(script);
+  };
+  loadLucide();
+
+  window.bbaSuccessButton = (button, label) => {
+    if (!button) return;
+    button.innerHTML = `<span class="btn-success"><i data-lucide="check" aria-hidden="true"></i><span>${label}</span></span>`;
+    if (window.lucide && typeof window.lucide.createIcons === 'function') {
+      window.lucide.createIcons();
+    }
+  };
 });

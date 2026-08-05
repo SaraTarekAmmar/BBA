@@ -5,13 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Schedule a Demo  -  BigBrother Analytics</title>
 <link rel="stylesheet" href="assets/css/style.css">
-<style>
-  @media(max-width:768px){
-    .demo-grid form > div[style*="grid-template-columns:1fr 1fr"]{
-      grid-template-columns:1fr !important;
-    }
-  }
-</style>
+
 </head>
 <body>
 
@@ -70,25 +64,25 @@
 </header>
 
 <!-- PAGE HERO -->
-<section class="page-hero" style="padding:80px 0 60px;text-align:center;background:linear-gradient(135deg,#f1f3fd 0%,#eeecfb 100%)">
+<section class="page-hero">
   <div class="wrap">
-    <h1 class="title" style="margin-bottom:18px">Schedule a Demo</h1>
-    <p class="lead" style="max-width:620px;margin:0 auto;color:var(--mut)">See BigBrother AI in action. Pick a time that works for you  -  we'll tailor the demo to your industry and needs.</p>
+    <h1 class="title">Schedule a Demo</h1>
+    <p class="lead" style="max-width:620px;margin:0 auto">See BigBrother AI in action. Pick a time that works for you  -  we'll tailor the demo to your industry and needs.</p>
   </div>
 </section>
 
 <!-- DEMO FORM SECTION -->
-<section style="padding:80px 0">
+<section>
   <div class="wrap">
-    <div style="display:grid;grid-template-columns:1.4fr 1fr;gap:48px;align-items:start" class="demo-grid">
+    <div class="demo-grid">
 
       <!-- LEFT  -  FORM -->
-      <div style="background:var(--surface);border:1px solid var(--border);border-radius:16px;padding:48px 40px">
+      <div class="demo-panel">
         <h2 style="font-size:24px;margin-bottom:6px">Request Your Demo</h2>
         <p class="mut" style="font-size:14px;margin-bottom:32px">Fill in the details below and we'll get back to you within 24 hours.</p>
 
-        <form style="display:flex;flex-direction:column;gap:20px" action="#" method="post">
-          <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px">
+        <form class="demo-form" style="display:flex;flex-direction:column;gap:20px" action="#" method="post">
+          <div class="frow">
             <div>
               <label for="full-name" style="display:block;font-size:13px;color:var(--mut);margin-bottom:6px">Full Name *</label>
               <input id="full-name" name="full_name" type="text" required placeholder="John Doe" style="width:100%;padding:12px 14px;border-radius:10px;border:1px solid var(--border);background:var(--bg);color:var(--text);font-size:14px;box-sizing:border-box">
@@ -98,7 +92,7 @@
               <input id="work-email" name="work_email" type="email" required placeholder="john@company.com" style="width:100%;padding:12px 14px;border-radius:10px;border:1px solid var(--border);background:var(--bg);color:var(--text);font-size:14px;box-sizing:border-box">
             </div>
           </div>
-          <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px">
+          <div class="frow">
             <div>
               <label for="company-name" style="display:block;font-size:13px;color:var(--mut);margin-bottom:6px">Company Name *</label>
               <input id="company-name" name="company_name" type="text" required placeholder="Acme Corp" style="width:100%;padding:12px 14px;border-radius:10px;border:1px solid var(--border);background:var(--bg);color:var(--text);font-size:14px;box-sizing:border-box">
@@ -108,7 +102,7 @@
               <input id="phone" name="phone" type="tel" required placeholder="+971 XX XXX XXXX" style="width:100%;padding:12px 14px;border-radius:10px;border:1px solid var(--border);background:var(--bg);color:var(--text);font-size:14px;box-sizing:border-box">
             </div>
           </div>
-          <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px">
+          <div class="frow">
             <div>
               <label for="job-title" style="display:block;font-size:13px;color:var(--mut);margin-bottom:6px">Job Title *</label>
               <input id="job-title" name="job_title" type="text" required placeholder="Marketing Director" style="width:100%;padding:12px 14px;border-radius:10px;border:1px solid var(--border);background:var(--bg);color:var(--text);font-size:14px;box-sizing:border-box">
@@ -166,51 +160,51 @@
       </div>
 
       <!-- RIGHT  -  SIDEBAR -->
-      <div style="display:flex;flex-direction:column;gap:32px">
+      <div class="demo-side">
 
         <!-- What to Expect -->
-        <div style="background:var(--surface);border:1px solid var(--border);border-radius:16px;padding:32px 28px">
+        <div class="demo-panel" style="padding:32px 28px">
           <h3 style="font-size:18px;margin-bottom:20px">What to Expect</h3>
-          <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:14px">
-            <li style="display:flex;align-items:flex-start;gap:10px;font-size:14px;color:var(--text)">
-              <span style="color:#22c55e;font-size:16px;line-height:1">&#10003;</span>
+          <ul class="demo-list">
+            <li>
+              <span style="color:#22c55e;display:inline-flex;align-items:center;justify-content:center;width:16px;height:16px;flex:none"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m5 12 4.5 4.5L19 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
               Personalized 30-minute demo
             </li>
-            <li style="display:flex;align-items:flex-start;gap:10px;font-size:14px;color:var(--text)">
-              <span style="color:#22c55e;font-size:16px;line-height:1">&#10003;</span>
+            <li>
+              <span style="color:#22c55e;display:inline-flex;align-items:center;justify-content:center;width:16px;height:16px;flex:none"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m5 12 4.5 4.5L19 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
               Tailored to your industry
             </li>
-            <li style="display:flex;align-items:flex-start;gap:10px;font-size:14px;color:var(--text)">
-              <span style="color:#22c55e;font-size:16px;line-height:1">&#10003;</span>
+            <li>
+              <span style="color:#22c55e;display:inline-flex;align-items:center;justify-content:center;width:16px;height:16px;flex:none"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m5 12 4.5 4.5L19 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
               Live Q&A with our team
             </li>
-            <li style="display:flex;align-items:flex-start;gap:10px;font-size:14px;color:var(--text)">
-              <span style="color:#22c55e;font-size:16px;line-height:1">&#10003;</span>
+            <li>
+              <span style="color:#22c55e;display:inline-flex;align-items:center;justify-content:center;width:16px;height:16px;flex:none"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m5 12 4.5 4.5L19 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
               Free trial setup included
             </li>
           </ul>
         </div>
 
         <!-- Contact -->
-        <div style="background:var(--surface);border:1px solid var(--border);border-radius:16px;padding:32px 28px">
+        <div class="demo-panel" style="padding:32px 28px">
           <h3 style="font-size:18px;margin-bottom:20px">Or Reach Us Directly</h3>
           <div style="display:flex;flex-direction:column;gap:16px;font-size:14px">
             <div style="display:flex;align-items:flex-start;gap:10px">
-              <span style="color:var(--accent);font-size:16px">&#9993;</span>
+              <span style="color:var(--accent);display:inline-flex;align-items:center;justify-content:center;width:16px;height:16px;flex:none"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2" stroke="currentColor" stroke-width="2"/><path d="m4 7 8 6 8-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
               <div>
                 <div style="color:var(--mut);font-size:12px;margin-bottom:2px">Email</div>
                 <a href="mailto:hello@bigbrotherai.com" style="color:var(--text);text-decoration:none">hello@bigbrotherai.com</a>
               </div>
             </div>
             <div style="display:flex;align-items:flex-start;gap:10px">
-              <span style="color:var(--accent);font-size:16px">&#9742;</span>
+              <span style="color:var(--accent);display:inline-flex;align-items:center;justify-content:center;width:16px;height:16px;flex:none"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07 19.4 19.4 0 0 1-6-6 19.8 19.8 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.12.86.32 1.7.6 2.51a2 2 0 0 1-.45 2.11L8 9.62a16 16 0 0 0 6.38 6.38l1.28-1.28a2 2 0 0 1 2.11-.45c.81.28 1.65.48 2.51.6A2 2 0 0 1 22 16.92Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg></span>
               <div>
                 <div style="color:var(--mut);font-size:12px;margin-bottom:2px">Phone</div>
                 <span>+971 XX XXX XXXX</span>
               </div>
             </div>
             <div style="display:flex;align-items:flex-start;gap:10px">
-              <span style="color:var(--accent);font-size:16px">&#9873;</span>
+              <span style="color:var(--accent);display:inline-flex;align-items:center;justify-content:center;width:16px;height:16px;flex:none"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 21V5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M5 5c3-1 5-1 8 0s5 1 8 0v10c-3 1-5 1-8 0s-5-1-8 0" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg></span>
               <div>
                 <div style="color:var(--mut);font-size:12px;margin-bottom:2px">Location</div>
                 <span>Dubai, UAE</span>
@@ -220,7 +214,7 @@
         </div>
 
         <!-- Trust Badges -->
-        <div style="background:var(--surface);border:1px solid var(--border);border-radius:16px;padding:24px 28px">
+        <div class="demo-panel" style="padding:24px 28px">
           <div style="display:flex;flex-wrap:wrap;gap:12px">
             <span style="display:inline-flex;align-items:center;gap:6px;padding:8px 14px;border-radius:8px;background:rgba(34,197,94,0.08);border:1px solid rgba(34,197,94,0.2);font-size:12px;font-weight:500;color:#22c55e">
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="5" y="10.5" width="14" height="9" rx="2.5" stroke="currentColor" stroke-width="1.7"/><path d="M8 10.5V8a4 4 0 1 1 8 0v2.5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>

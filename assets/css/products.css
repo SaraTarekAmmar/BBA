@@ -6,31 +6,33 @@
 .products-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2rem;
+  gap: 1.75rem;
   margin-top: 3rem;
 }
-
 /* --- Individual product card --- */
 .product-card {
-  background: var(--bg);
+  background: #fff;
   border: 1px solid var(--border);
-  border-radius: var(--r2);
+  border-radius: var(--r);
   overflow: hidden;
   transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease;
   display: flex;
   flex-direction: column;
+  box-shadow: var(--sh), var(--hair);
 }
 
 .product-card:hover {
   transform: translateY(-4px);
-  box-shadow: 0 12px 32px rgba(0,0,0,.12);
-  border-color: var(--pri);
+  box-shadow: var(--sh-h), var(--hair);
+  border-color: rgba(51,70,181,.22);
 }
 
 /* image / icon area */
 .product-card__img {
   height: 220px;
-  background: var(--bg2);
+  background:
+    radial-gradient(280px 180px at 50% 0, rgba(51,70,181,.14), transparent 70%),
+    linear-gradient(180deg,#f8faff 0%, #eef2ff 100%);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -52,7 +54,7 @@
 
 /* body */
 .product-card__body {
-  padding: 1.75rem;
+  padding: 1.5rem 1.5rem 1.75rem;
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -74,14 +76,14 @@
 
 .product-card__title {
   font-size: 1.35rem;
-  font-weight: 700;
-  color: var(--fg);
+  font-weight: 650;
+  color: var(--ink);
   margin: 0 0 .5rem;
 }
 
 .product-card__desc {
   font-size: .92rem;
-  color: var(--fg2);
+  color: var(--mut);
   line-height: 1.65;
   margin-bottom: 1.25rem;
   flex: 1;
@@ -96,7 +98,7 @@
 
 .product-card__features li {
   font-size: .85rem;
-  color: var(--fg2);
+  color: var(--mut);
   padding: .35rem 0;
   display: flex;
   align-items: center;
@@ -104,10 +106,13 @@
 }
 
 .product-card__features li::before {
-  content: "✓";
-  color: var(--pri);
-  font-weight: 700;
-  font-size: .9rem;
+  content: "";
+  width: 1em;
+  height: 1em;
+  flex: none;
+  background: var(--pri);
+  -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M20 6 9 17l-5-5'/%3E%3C/svg%3E") center/contain no-repeat;
+  mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M20 6 9 17l-5-5'/%3E%3C/svg%3E") center/contain no-repeat;
 }
 
 /* CTA button */
@@ -145,21 +150,20 @@
 }
 
 .value-item__icon {
-  font-size: 2.5rem;
   color: var(--pri);
-  margin-bottom: .75rem;
+  margin-bottom: .85rem;
 }
 
 .value-item__title {
   font-size: 1.1rem;
-  font-weight: 700;
-  color: var(--fg);
+  font-weight: 650;
+  color: var(--ink);
   margin-bottom: .4rem;
 }
 
 .value-item__text {
   font-size: .88rem;
-  color: var(--fg2);
+  color: var(--mut);
   line-height: 1.6;
 }
 
@@ -167,8 +171,9 @@
 .comparison-wrap {
   overflow-x: auto;
   margin-top: 2.5rem;
-  border: 1px solid var(--border);
-  border-radius: var(--r2);
+  border: 1px solid var(--line);
+  border-radius: var(--r);
+  box-shadow: var(--sh), var(--hair);
 }
 
 .comparison-wrap table {
@@ -181,20 +186,20 @@
 .comparison-wrap td {
   padding: .9rem 1.2rem;
   text-align: start;
-  border-bottom: 1px solid var(--border);
+  border-bottom: 1px solid var(--line);
 }
 
 .comparison-wrap th {
-  background: var(--bg2);
-  font-weight: 700;
-  color: var(--fg);
+  background: var(--band);
+  font-weight: 650;
+  color: var(--ink);
   font-size: .8rem;
   text-transform: uppercase;
   letter-spacing: .04em;
 }
 
 .comparison-wrap td {
-  color: var(--fg2);
+  color: var(--ink2);
 }
 
 .comparison-wrap tr:last-child td {
@@ -207,7 +212,7 @@
 }
 
 .comparison-wrap .dash {
-  color: var(--fg3);
+  color: var(--dim);
 }
 
 /* --- Responsive --- */
@@ -240,3 +245,11 @@
   }
 }
 
+.product-card__img .placeholder-icon svg {
+  width: 72px;
+  height: 72px;
+  stroke: var(--pri);
+  opacity: .6;
+  stroke-width: 1.5px;
+  fill: none;
+}

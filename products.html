@@ -58,6 +58,10 @@
       <a href="customers.html">Customers</a>
       <a href="resources.html">Resources</a>
       <a href="about.html">About</a>
+      <div class="mobile-menu-cta">
+        <a href="schedule-demo.html" class="btn btn-ghost" style="width:100%;justify-content:center">Sign in</a>
+        <a href="schedule-demo.html" class="btn btn-primary" style="width:100%;justify-content:center">Schedule a Demo</a>
+      </div>
     </div>
   </div>
 </header>
@@ -80,7 +84,7 @@
       <!-- BBA White -->
       <div class="product-card reveal">
         <div class="product-card__img">
-          <span class="placeholder-icon">📊</span>
+          <span class="placeholder-icon"><i data-lucide="bar-chart-3"></i></span>
         </div>
         <div class="product-card__body">
           <span class="product-card__badge">Platform</span>
@@ -102,7 +106,7 @@
       <!-- AdScanner -->
       <div class="product-card reveal">
         <div class="product-card__img">
-          <span class="placeholder-icon">🔍</span>
+          <span class="placeholder-icon"><i data-lucide="search"></i></span>
         </div>
         <div class="product-card__body">
           <span class="product-card__badge">Ad Intelligence</span>
@@ -124,7 +128,7 @@
       <!-- Prompt Engine -->
       <div class="product-card reveal">
         <div class="product-card__img">
-          <span class="placeholder-icon">⚡</span>
+          <span class="placeholder-icon"><i data-lucide="zap"></i></span>
         </div>
         <div class="product-card__body">
           <span class="product-card__badge">AI-Powered</span>
@@ -159,27 +163,22 @@
 
     <div class="value-row">
       <div class="value-item reveal">
-        <div class="value-item__icon">🔗</div>
+        <div class="value-item__icon"><i data-lucide="link"></i></div>
         <h3 class="value-item__title">Unified Data Layer</h3>
         <p class="value-item__text">All three products share a common data layer  -  no silos, no re-keying, no exports. Your data flows where it's needed.</p>
       </div>
       <div class="value-item reveal">
-        <div class="value-item__icon">🏢</div>
+        <div class="value-item__icon"><i data-lucide="building-2"></i></div>
         <h3 class="value-item__title">Multi-Tenant by Default</h3>
         <p class="value-item__text">Manage clients, teams, and permissions across every product from a single admin console.</p>
       </div>
       <div class="value-item reveal">
-        <div class="value-item__icon">📈</div>
+        <div class="value-item__icon"><i data-lucide="trending-up"></i></div>
         <h3 class="value-item__title">Real-Time Dashboards</h3>
         <p class="value-item__text">Every product feeds into live dashboards. Spot trends, anomalies, and opportunities as they happen.</p>
       </div>
       <div class="value-item reveal">
-        <div class="value-item__icon" aria-hidden="true">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
-            <rect x="5" y="10.5" width="14" height="9" rx="2.5" stroke="currentColor" stroke-width="1.7"/>
-            <path d="M8 10.5V8a4 4 0 1 1 8 0v2.5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
-          </svg>
-        </div>
+        <div class="value-item__icon"><i data-lucide="lock"></i></div>
         <h3 class="value-item__title">Enterprise Security</h3>
         <p class="value-item__text">SOC 2 compliant, SSO ready, encrypted at rest and in transit. Your data stays yours.</p>
       </div>
@@ -209,57 +208,57 @@
         <tbody>
           <tr>
             <td>White-label dashboards</td>
-            <td class="check">✓</td>
-            <td class="dash"> - </td>
-            <td class="dash"> - </td>
+            <td class="check"><span class="status-icon status-icon--check" role="img" aria-label="Included" data-lucide="check"></span></td>
+            <td class="dash"><span class="status-icon status-icon--dash" role="img" aria-label="Not included" data-lucide="minus"></span></td>
+            <td class="dash"><span class="status-icon status-icon--dash" role="img" aria-label="Not included" data-lucide="minus"></span></td>
           </tr>
           <tr>
             <td>Ad campaign tracking</td>
-            <td class="dash"> - </td>
-            <td class="check">✓</td>
-            <td class="dash"> - </td>
+            <td class="dash"><span class="status-icon status-icon--dash" role="img" aria-label="Not included" data-lucide="minus"></span></td>
+            <td class="check"><span class="status-icon status-icon--check" role="img" aria-label="Included" data-lucide="check"></span></td>
+            <td class="dash"><span class="status-icon status-icon--dash" role="img" aria-label="Not included" data-lucide="minus"></span></td>
           </tr>
           <tr>
             <td>Competitor intelligence</td>
-            <td class="dash"> - </td>
-            <td class="check">✓</td>
-            <td class="dash"> - </td>
+            <td class="dash"><span class="status-icon status-icon--dash" role="img" aria-label="Not included" data-lucide="minus"></span></td>
+            <td class="check"><span class="status-icon status-icon--check" role="img" aria-label="Included" data-lucide="check"></span></td>
+            <td class="dash"><span class="status-icon status-icon--dash" role="img" aria-label="Not included" data-lucide="minus"></span></td>
           </tr>
           <tr>
             <td>Prompt generation &amp; testing</td>
-            <td class="dash"> - </td>
-            <td class="dash"> - </td>
-            <td class="check">✓</td>
+            <td class="dash"><span class="status-icon status-icon--dash" role="img" aria-label="Not included" data-lucide="minus"></span></td>
+            <td class="dash"><span class="status-icon status-icon--dash" role="img" aria-label="Not included" data-lucide="minus"></span></td>
+            <td class="check"><span class="status-icon status-icon--check" role="img" aria-label="Included" data-lucide="check"></span></td>
           </tr>
           <tr>
             <td>Multi-tenant client management</td>
-            <td class="check">✓</td>
-            <td class="check">✓</td>
-            <td class="check">✓</td>
+            <td class="check"><span class="status-icon status-icon--check" role="img" aria-label="Included" data-lucide="check"></span></td>
+            <td class="check"><span class="status-icon status-icon--check" role="img" aria-label="Included" data-lucide="check"></span></td>
+            <td class="check"><span class="status-icon status-icon--check" role="img" aria-label="Included" data-lucide="check"></span></td>
           </tr>
           <tr>
             <td>Real-time data streaming</td>
-            <td class="check">✓</td>
-            <td class="check">✓</td>
-            <td class="dash"> - </td>
+            <td class="check"><span class="status-icon status-icon--check" role="img" aria-label="Included" data-lucide="check"></span></td>
+            <td class="check"><span class="status-icon status-icon--check" role="img" aria-label="Included" data-lucide="check"></span></td>
+            <td class="dash"><span class="status-icon status-icon--dash" role="img" aria-label="Not included" data-lucide="minus"></span></td>
           </tr>
           <tr>
             <td>Automated reporting</td>
-            <td class="check">✓</td>
-            <td class="check">✓</td>
-            <td class="check">✓</td>
+            <td class="check"><span class="status-icon status-icon--check" role="img" aria-label="Included" data-lucide="check"></span></td>
+            <td class="check"><span class="status-icon status-icon--check" role="img" aria-label="Included" data-lucide="check"></span></td>
+            <td class="check"><span class="status-icon status-icon--check" role="img" aria-label="Included" data-lucide="check"></span></td>
           </tr>
           <tr>
             <td>API access</td>
-            <td class="check">✓</td>
-            <td class="check">✓</td>
-            <td class="check">✓</td>
+            <td class="check"><span class="status-icon status-icon--check" role="img" aria-label="Included" data-lucide="check"></span></td>
+            <td class="check"><span class="status-icon status-icon--check" role="img" aria-label="Included" data-lucide="check"></span></td>
+            <td class="check"><span class="status-icon status-icon--check" role="img" aria-label="Included" data-lucide="check"></span></td>
           </tr>
           <tr>
             <td>AI-powered insights</td>
-            <td class="dash"> - </td>
-            <td class="check">✓</td>
-            <td class="check">✓</td>
+            <td class="dash"><span class="status-icon status-icon--dash" role="img" aria-label="Not included" data-lucide="minus"></span></td>
+            <td class="check"><span class="status-icon status-icon--check" role="img" aria-label="Included" data-lucide="check"></span></td>
+            <td class="check"><span class="status-icon status-icon--check" role="img" aria-label="Included" data-lucide="check"></span></td>
           </tr>
         </tbody>
       </table>
