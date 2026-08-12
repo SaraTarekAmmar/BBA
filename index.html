@@ -3,9 +3,19 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<script>
+(() => {
+  const lang = localStorage.getItem('bba-lang');
+  if (lang === 'ar') {
+    document.documentElement.lang = 'ar';
+    document.documentElement.dir = 'rtl';
+  }
+})();
+</script>
 <title>BigBrother Analytics  -  Data intelligence for strategic decisions</title>
 <meta name="description" content="BigBrother Analytics turns complex data into clear decisions with Arabic NLP, monitoring, and AI-powered intelligence for teams and governments.">
 <link rel="stylesheet" href="assets/css/style.css">
+<link rel="icon" type="image/png" href="assets/img/bba-logo-black.png">
 </head>
 <body>
 
@@ -503,10 +513,10 @@
       </div>
     </div>
     <div class="fbottom">
-      <div>&copy; 2025 BigBrother Analytics & its derivatives. All rights reserved.</div>
+        <div>&copy; 2026 BigBrother Analytics & its derivatives. All rights reserved.</div>
       <div class="soc">
-        <a href="#">Facebook</a><a href="#">LinkedIn</a>
-        <a href="#">Terms</a><a href="#">Privacy</a><a href="#">GDPR</a><a href="#">Sitemap</a>
+        <a href="https://www.facebook.com/bigbrotheranalytics/">Facebook</a><a href="https://www.linkedin.com/company/bigbrother-analytics-mena/">LinkedIn</a>
+        <a href="terms.html">Terms</a><a href="privacy.html">Privacy</a><a href="https://bigbrotheranalytics.com/bba-gdpr-compliance/">GDPR</a><a href="sitemap.html">Sitemap</a>
       </div>
     </div>
   </div>

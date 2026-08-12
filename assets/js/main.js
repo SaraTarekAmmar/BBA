@@ -15,6 +15,9 @@ document.addEventListener('DOMContentLoaded', () => {
     'products.html': { en: 'Products - BigBrother Analytics', ar: 'المنتجات - BigBrother Analytics' },
     'prompt-engine.html': { en: 'BigBrother AI - Prompt Engine | AI Marketing Prompt Intelligence', ar: 'BigBrother AI - Prompt Engine | ذكاء برومبتات التسويق' },
     'resources.html': { en: 'Resources & Insights - BigBrother Analytics', ar: 'الموارد والرؤى - BigBrother Analytics' },
+    'privacy.html': { en: 'Privacy & Policy - BigBrother Analytics', ar: 'الخصوصية والسياسة - BigBrother Analytics' },
+    'sitemap.html': { en: 'Sitemap - BigBrother Analytics', ar: 'خريطة الموقع - BigBrother Analytics' },
+    'terms.html': { en: 'Terms & Conditions - BigBrother Analytics', ar: 'الشروط والأحكام - BigBrother Analytics' },
     'schedule-demo.html': { en: 'Schedule a Demo - BigBrother Analytics', ar: 'احجز عرضًا توضيحيًا - BigBrother Analytics' },
     'solutions.html': { en: 'Solutions - BigBrother Analytics', ar: 'الحلول - BigBrother Analytics' }
   };
@@ -31,6 +34,12 @@ document.addEventListener('DOMContentLoaded', () => {
       'Case Studies': 'دراسات الحالة',
       Documentation: 'التوثيق',
       About: 'من نحن',
+      'Terms & Conditions': 'الشروط والأحكام',
+      'Privacy & Policy': 'الخصوصية والسياسة',
+      Sitemap: 'خريطة الموقع',
+      Main: 'الرئيسية',
+      Legal: 'القانوني',
+      External: 'خارجي',
       'Schedule a Demo': 'احجز عرضًا توضيحيًا',
       'Explore the platform': 'استكشف المنصة',
       'Explore solutions': 'استكشف الحلول',
@@ -726,8 +735,36 @@ document.addEventListener('DOMContentLoaded', () => {
       'Languages: Arabic + English': 'اللغات: العربية + الإنجليزية',
       'About - BigBrother Analytics': 'من نحن - BigBrother Analytics',
       'built in the region, for the region': 'بُنيت في المنطقة، ومن أجل المنطقة',
-      '© 2025 BigBrother Analytics & its derivatives. All rights reserved.': '© 2025 BigBrother Analytics ومشتقاتها. جميع الحقوق محفوظة.',
+      '© 2026 BigBrother Analytics & its derivatives. All rights reserved.': '© 2026 BigBrother Analytics ومشتقاتها. جميع الحقوق محفوظة.',
       'AI-powered data intelligence for businesses and governments. We collect, analyze, and visualize the data that matters for you.': 'ذكاء البيانات المدعوم بالذكاء الاصطناعي للشركات والحكومات. نجمع ونحلل ونعرض البيانات التي تهمك.',
+      'Simple rules for using BigBrother Analytics': 'قواعد بسيطة لاستخدام BigBrother Analytics',
+      'These terms cover website access, content use, and demo requests on the public BigBrother Analytics site.': 'تغطي هذه الشروط الوصول إلى الموقع واستخدام المحتوى وطلبات العروض التوضيحية على موقع BigBrother Analytics العام.',
+      'Website use': 'استخدام الموقع',
+      'Use the site lawfully, do not attempt to disrupt it, and do not misuse forms, downloads, or embedded tools.': 'استخدم الموقع بشكل قانوني، ولا تحاول تعطيله، ولا تسيء استخدام النماذج أو التنزيلات أو الأدوات المضمنة.',
+      'Intellectual property': 'الملكية الفكرية',
+      'Text, visuals, product names, and brand assets belong to BigBrother Analytics or their respective owners.': 'النصوص والمرئيات وأسماء المنتجات وأصول العلامة التجارية تخص BigBrother Analytics أو أصحابها المعنيين.',
+      'Submitted information': 'المعلومات المرسلة',
+      'When you request a demo or contact the team, you agree that the details you share may be used to respond to your request.': 'عندما تطلب عرضًا توضيحيًا أو تتواصل مع الفريق، فإنك توافق على إمكانية استخدام التفاصيل التي تشاركها للرد على طلبك.',
+      'Site updates': 'تحديثات الموقع',
+      'We may update pages, pricing, links, and product information without notice as the site evolves.': 'قد نحدث الصفحات والأسعار والروابط ومعلومات المنتجات دون إشعار مع تطور الموقع.',
+      Questions: 'أسئلة',
+      'Need help with a commercial agreement?': 'هل تحتاج إلى مساعدة في اتفاقية تجارية؟',
+      'Use the demo form and the team will route you to the right contact.': 'استخدم نموذج العرض التوضيحي وسيقوم الفريق بتوجيهك إلى جهة الاتصال المناسبة.',
+      'How BigBrother Analytics handles data': 'كيف يتعامل BigBrother Analytics مع البيانات',
+      'This page reflects the site’s public data practices: contact requests, demo submissions, language preference, and the open-source / public-source intelligence the platform describes.': 'تعكس هذه الصفحة ممارسات البيانات العامة للموقع: طلبات التواصل، وطلبات العروض التوضيحية، وتفضيل اللغة، وذكاء المصادر المفتوحة/العامة الذي تصفه المنصة.',
+      'What we collect': 'ما الذي نجمعه',
+      'We may receive demo form details, contact information, and the language preference saved in your browser for the site experience.': 'قد نتلقى تفاصيل نموذج العرض التوضيحي ومعلومات التواصل وتفضيل اللغة المحفوظ في متصفحك لتحسين تجربة الموقع.',
+      'How we use it': 'كيف نستخدمه',
+      'Information is used to respond to requests, arrange demos, operate the site, and improve product and content relevance.': 'تُستخدم المعلومات للرد على الطلبات، وترتيب العروض، وتشغيل الموقع، وتحسين ملاءمة المنتجات والمحتوى.',
+      'Public-source data': 'البيانات من المصادر العامة',
+      'The platform’s published GDPR page says BBA works with legally and ethically sourced open data and public information.': 'تذكر صفحة GDPR المنشورة أن BBA تعمل ببيانات مفتوحة ومعلومات عامة تم الحصول عليها بشكل قانوني وأخلاقي.',
+      'Your choices': 'خياراتك',
+      'You can clear local browser storage, avoid submitting forms, or contact the team for follow-up on any request.': 'يمكنك مسح التخزين المحلي في المتصفح أو تجنب إرسال النماذج أو التواصل مع الفريق لمتابعة أي طلب.',
+      'Need the compliance page?': 'هل تحتاج إلى صفحة الامتثال؟',
+      'The live site’s current GDPR page remains the best source for its formal compliance wording.': 'تظل صفحة GDPR الحالية على الموقع المباشر أفضل مصدر للصياغة الرسمية للامتثال.',
+      'Open GDPR page →': 'افتح صفحة GDPR ←',
+      'Every page in one place': 'كل صفحة في مكان واحد',
+      'A quick map of the public BigBrother Analytics site and its key legal and contact pages.': 'خريطة سريعة لموقع BigBrother Analytics العام وصفحات الاتصال والقانون الأساسية.',
 
       // Page specific additional translations
       'BigBrother Analytics was founded in 2018 to solve a critical gap: turning the massive volume of Arabic-language data into strategic intelligence that businesses and governments can act on.': 'تأسست BigBrother Analytics في عام 2018 لسد فجوة حرجة: تحويل الحجم الهائل من البيانات باللغة العربية إلى معلومات استخباراتية استراتيجية يمكن للشركات والحكومات العمل بناءً عليها.',
@@ -933,11 +970,12 @@ document.addEventListener('DOMContentLoaded', () => {
     localStorage.setItem(localeKey, lang);
   };
 
-  const animate = (elements) => {
+  const animate = (elements, motionClass = 'motion-up') => {
     elements.forEach((el, index) => {
       if (!el || animated.has(el)) return;
       animated.add(el);
       el.dataset.animate = 'true';
+      el.classList.add(motionClass);
       el.style.setProperty('--delay', `${Math.min(index * 70, 420)}ms`);
     });
   };
@@ -981,11 +1019,34 @@ document.addEventListener('DOMContentLoaded', () => {
 
   setLocale(getLocale());
 
+  /* ----- Footer links ----- */
+  const footerLinks = {
+    Facebook: 'https://www.facebook.com/bigbrotheranalytics/',
+    LinkedIn: 'https://www.linkedin.com/company/bigbrother-analytics-mena/',
+    Terms: 'terms.html',
+    Privacy: 'privacy.html',
+    GDPR: 'https://bigbrotheranalytics.com/bba-gdpr-compliance/',
+    Sitemap: 'sitemap.html'
+  };
+  document.querySelectorAll('footer a').forEach((link) => {
+    const url = footerLinks[link.textContent.trim()];
+    if (!url) return;
+    link.href = url;
+    if (/^https?:\/\//.test(url)) {
+      link.target = '_blank';
+      link.rel = 'noopener noreferrer';
+    }
+  });
+
   /* ----- Motion / reveal ----- */
-  const motionTargets = [
-    ...document.querySelectorAll('section, footer, .strip, header, .bcard, .stepcard, .uc, .pcard, .quote, .faq-item, .fcard, .product-card, .price-card, .panel, .card, .cta, .crisis')
-  ];
-  animate(motionTargets);
+  animate(
+    [...document.querySelectorAll('header, section, footer, .strip, .bcard, .stepcard, .uc, .pcard, .quote, .faq-item, .fcard, .product-card, .price-card, .panel, .card, .cta, .crisis')],
+    'motion-up'
+  );
+  animate(
+    [...document.querySelectorAll('.hero-grid > *, .page-hero > .wrap > *, .hero-actions > *, .page-hero .lead, .page-hero .sub')],
+    'motion-scale'
+  );
 
   const revealTargets = document.querySelectorAll('[data-animate], .reveal');
   if (revealTargets.length) {
