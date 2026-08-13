@@ -2,6 +2,7 @@
 
 document.addEventListener('DOMContentLoaded', () => {
   const localeKey = 'bba-lang';
+  const themeKey = 'bba-theme';
   const page = location.pathname.split('/').pop() || 'index.html';
 
   const titleMap = {
@@ -882,6 +883,45 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   };
 
+  const getTheme = () => {
+    try {
+      const saved = localStorage.getItem(themeKey);
+      if (saved === 'light' || saved === 'dark') return saved;
+    } catch (_) {}
+    return window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+  };
+
+  const themeLabel = (theme, lang) => {
+    const dark = theme === 'dark';
+    if (lang === 'ar') return dark ? 'الوضع الفاتح' : 'الوضع الداكن';
+    return dark ? 'Light mode' : 'Dark mode';
+  };
+
+  const themeActionLabel = (theme, lang) => {
+    const dark = theme === 'dark';
+    if (lang === 'ar') return dark ? 'التبديل إلى الوضع الفاتح' : 'التبديل إلى الوضع الداكن';
+    return dark ? 'Switch to light mode' : 'Switch to dark mode';
+  };
+
+  const syncThemeButtons = (theme, lang) => {
+    const label = themeLabel(theme, lang);
+    const action = themeActionLabel(theme, lang);
+    document.querySelectorAll('[data-theme-toggle]').forEach(btn => {
+      btn.textContent = label;
+      btn.setAttribute('aria-pressed', String(theme === 'dark'));
+      btn.setAttribute('aria-label', action);
+      btn.setAttribute('title', action);
+    });
+  };
+
+  const setTheme = (theme, lang = document.documentElement.lang || 'en') => {
+    const next = theme === 'dark' ? 'dark' : 'light';
+    document.documentElement.dataset.theme = next;
+    document.documentElement.style.colorScheme = next;
+    try { localStorage.setItem(themeKey, next); } catch (_) {}
+    syncThemeButtons(next, lang);
+  };
+
   const originalText = new WeakMap();
   const originalAttr = new WeakMap();
   const originalPlaceholder = new WeakMap();
@@ -961,9 +1001,12 @@ document.addEventListener('DOMContentLoaded', () => {
     document.querySelectorAll('[data-lang-toggle]').forEach(btn => {
       btn.textContent = rtl ? 'AR | EN' : 'EN | AR';
       btn.setAttribute('aria-pressed', String(rtl));
+      btn.setAttribute('aria-label', rtl ? 'Switch to English' : 'Switch to Arabic');
+      btn.setAttribute('title', rtl ? 'Switch to English' : 'Switch to Arabic');
     });
 
     translateTree(document.body, lang);
+    syncThemeButtons(document.documentElement.dataset.theme || getTheme(), lang);
 
     const title = titleMap[page]?.[lang];
     if (title) document.title = title;
@@ -1001,6 +1044,17 @@ document.addEventListener('DOMContentLoaded', () => {
     });
     desktopCta.insertBefore(langBtn, desktopCta.firstChild);
   }
+  if (desktopCta && !desktopCta.querySelector('[data-theme-toggle]')) {
+    const themeBtn = document.createElement('button');
+    themeBtn.type = 'button';
+    themeBtn.className = 'btn btn-ghost theme-toggle';
+    themeBtn.dataset.themeToggle = 'true';
+    themeBtn.addEventListener('click', () => {
+      const next = document.documentElement.dataset.theme === 'dark' ? 'light' : 'dark';
+      setTheme(next, document.documentElement.lang || 'en');
+    });
+    desktopCta.insertBefore(themeBtn, desktopCta.firstChild);
+  }
 
   const mobileCta = document.querySelector('.mobile-menu-cta');
   if (mobileCta && !mobileCta.querySelector('[data-lang-toggle]')) {
@@ -1016,7 +1070,21 @@ document.addEventListener('DOMContentLoaded', () => {
     });
     mobileCta.insertBefore(langBtn, mobileCta.firstChild);
   }
+  if (mobileCta && !mobileCta.querySelector('[data-theme-toggle]')) {
+    const themeBtn = document.createElement('button');
+    themeBtn.type = 'button';
+    themeBtn.className = 'btn btn-ghost theme-toggle';
+    themeBtn.style.width = '100%';
+    themeBtn.style.justifyContent = 'center';
+    themeBtn.dataset.themeToggle = 'true';
+    themeBtn.addEventListener('click', () => {
+      const next = document.documentElement.dataset.theme === 'dark' ? 'light' : 'dark';
+      setTheme(next, document.documentElement.lang || 'en');
+    });
+    mobileCta.insertBefore(themeBtn, mobileCta.firstChild);
+  }
 
+  setTheme(getTheme(), getLocale());
   setLocale(getLocale());
 
   /* ----- Footer links ----- */
