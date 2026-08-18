@@ -879,6 +879,42 @@ document.addEventListener('DOMContentLoaded', () => {
       'Score: 8.4 / 10': 'النتيجة: 8.4 / 10',
       'Sentiment': 'المشاعر',
       '52%': '52%',
+      'Inside the platform': 'داخل المنصة',
+      'See the intelligence your team works with every day': 'شاهد الذكاء الذي يعمل به فريقك كل يوم',
+      'BigBrother brings analysis, monitoring, reporting and visual storytelling into one connected workspace. Each surface is designed to answer a different business question while keeping the context, evidence and next action close at hand.': 'تجمع BigBrother التحليل والمراقبة وإعداد التقارير والسرد البصري في مساحة عمل مترابطة واحدة. صُمم كل قسم للإجابة عن سؤال مختلف في العمل مع إبقاء السياق والأدلة والخطوة التالية في متناول اليد.',
+      '01 · Command center': '01 · مركز القيادة',
+      'Dashboard intelligence': 'ذكاء لوحة المعلومات',
+      'DASHBOARD INTELLIGENCE': 'ذكاء لوحة المعلومات',
+      'Start with the complete picture.': 'ابدأ بالصورة الكاملة.',
+      'The dashboard gives leadership and analysts a shared view of what is happening across monitored markets. Track conversations, interactions, video reach, sentiment and project health in one place, then drill into the workspace that needs attention.': 'تمنح لوحة المعلومات القادة والمحللين رؤية مشتركة لما يحدث في الأسواق التي تتم مراقبتها. تابع المحادثات والتفاعلات والوصول إلى الفيديو والمشاعر وحالة المشاريع في مكان واحد، ثم تعمق في مساحة العمل التي تحتاج إلى اهتمام.',
+      'Live KPIs and trend movement': 'مؤشرات أداء مباشرة وحركة الاتجاهات',
+      'Workspace-level monitoring': 'مراقبة على مستوى مساحة العمل',
+      'Custom charts and filters': 'مخططات وفلاتر مخصصة',
+      '02 · News portal': '02 · بوابة الأخبار',
+      'News intelligence': 'ذكاء الأخبار',
+      'Know what the news is really saying.': 'اعرف ما تقوله الأخبار حقًا.',
+      'Monitor relevant stories as they break, see the tone and engagement around each article, and move from a headline to the source behind it. AI summaries help teams understand the signal without reading every article manually.': 'راقب القصص المهمة لحظة صدورها، وشاهد نبرة كل مقال ومستوى التفاعل حوله، وانتقل من العنوان إلى المصدر الأصلي. تساعد الملخصات المدعومة بالذكاء الاصطناعي الفرق على فهم الإشارة دون قراءة كل مقال يدويًا.',
+      '03 · Video analytics': '03 · تحليلات الفيديو',
+      'Video intelligence': 'ذكاء الفيديو',
+      'See how every video lands.': 'افهم كيف يتفاعل الجمهور مع كل فيديو.',
+      'Transcribe, summarize and analyze video content with sentiment, views, reactions and comments in the same view. Understand which moments drive engagement and how audiences respond across languages.': 'فرّغ محتوى الفيديو ولخّصه وحلّله مع المشاعر والمشاهدات وردود الفعل والتعليقات في شاشة واحدة. افهم اللحظات التي تقود التفاعل وكيف يستجيب الجمهور عبر اللغات المختلفة.',
+      '04 · Reports': '04 · التقارير',
+      'Decision-ready reporting': 'تقارير جاهزة للقرار',
+      'Turn evidence into a briefing.': 'حوّل الأدلة إلى إحاطة واضحة.',
+      'Build polished reports from the intelligence you have already collected. Combine narrative, charts and key findings into a clear document that can be reviewed, exported and shared with decision-makers.': 'أنشئ تقارير احترافية من الذكاء الذي جمعته بالفعل. اجمع السرد والمخططات والنتائج الرئيسية في مستند واضح يمكن مراجعته وتصديره ومشاركته مع صناع القرار.',
+      '05 · Video wall': '05 · جدار الفيديو',
+      'Control-room visibility': 'رؤية غرفة العمليات',
+      'Make intelligence visible at scale.': 'اجعل الذكاء مرئيًا على نطاق واسع.',
+      'Configure screen grids, assign dashboards and distribute the right cards to the right display. Video Wall turns your intelligence layer into an operational view for teams that need live awareness.': 'اضبط شبكات الشاشات، وخصص لوحات المعلومات، ووزّع البطاقات المناسبة على الشاشة المناسبة. يحوّل جدار الفيديو طبقة الذكاء إلى رؤية تشغيلية للفرق التي تحتاج إلى وعي مباشر.',
+      'Comments & engagement': 'التعليقات والتفاعل',
+      'Go from reach to reaction.': 'انتقل من الوصول إلى ردود الفعل.',
+      'See the comments, reactions and discussion underneath the content so your team understands not only what travelled, but what it caused.': 'شاهد التعليقات وردود الفعل والنقاشات أسفل المحتوى حتى يفهم فريقك ليس فقط ما انتشر، بل ما الذي أحدثه.',
+      'Home workspace': 'مساحة العمل الرئيسية',
+      'Keep every priority in view.': 'أبقِ كل أولوية أمامك.',
+      'Bring your most important workspaces, alerts and reporting shortcuts together so the next question is always easy to reach.': 'اجمع أهم مساحات العمل والتنبيهات واختصارات التقارير في مكان واحد حتى يصبح الوصول إلى السؤال التالي سهلًا دائمًا.',
+      'Social analytics': 'تحليلات التواصل الاجتماعي',
+      'Understand the conversation behind the number.': 'افهم المحادثة وراء الرقم.',
+      'Compare channels, audiences and content performance to reveal the patterns that shape brand health and campaign momentum.': 'قارن بين القنوات والجماهير وأداء المحتوى لاكتشاف الأنماط التي تشكل صحة العلامة التجارية وزخم الحملات.',
        'Watch': 'مراقبة'
     }
   };
@@ -974,11 +1010,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const nodes = [];
     while (walker.nextNode()) nodes.push(walker.currentNode);
-    nodes.forEach(node => {
+        nodes.forEach(node => {
       cacheText(node);
       node.nodeValue = textFor(originalText.get(node), lang);
     });
-
+    document.querySelectorAll('[data-i18n]').forEach(el => {
+      const source = el.getAttribute('data-i18n') || el.textContent;
+      el.textContent = textFor(source, lang);
+    });
     document.querySelectorAll('input[placeholder], textarea[placeholder]').forEach(el => {
       if (!originalPlaceholder.has(el)) originalPlaceholder.set(el, el.getAttribute('placeholder'));
       el.setAttribute('placeholder', textFor(originalPlaceholder.get(el), lang));

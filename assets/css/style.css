@@ -896,3 +896,7 @@ section, [id] {
 .screen-utility-card p{margin:0;color:var(--mut);font-size:12px;line-height:1.55}
 @media(max-width:768px){.screen-utility-grid{grid-template-columns:1fr}.screen-utility-card{grid-template-columns:124px 1fr}.screen-utility-card img{width:124px;height:94px}}
 @media(max-width:480px){.screen-utility-card{grid-template-columns:1fr}.screen-utility-card img{width:100%;height:auto;aspect-ratio:16/9}}
+
+.kicker-ar{display:none}
+html[dir="rtl"] .kicker-en{display:none}
+html[dir="rtl"] .kicker-ar{display:inline}
