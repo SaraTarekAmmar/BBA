@@ -1,43 +1,565 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="BigBrother Analytics turns social, news, TV and audience data into intelligence your team can act on." />
-  <meta name="theme-color" content="#050a1b" />
-  <title>BigBrother Analytics — See the signal. Move before the market.</title>
-  <link rel="icon" type="image/png" href="assets/img/bba-logo-black.png" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="assets/css/landing.css" />
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script>
+(() => {
+  const lang = localStorage.getItem('bba-lang');
+  if (lang === 'ar') {
+    document.documentElement.lang = 'ar';
+    document.documentElement.dir = 'rtl';
+  }
+})();
+</script>
+<title>BigBrother Analytics  -  Data intelligence for strategic decisions</title>
+<meta name="description" content="BigBrother Analytics turns complex data into clear decisions with Arabic NLP, monitoring, and AI-powered intelligence for teams and governments.">
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="icon" type="image/png" href="assets/img/bba-logo-black.png">
 </head>
-<body class="site-shell">
-  <div class="ambient ambient-a"></div>
-  <div class="ambient ambient-b"></div>
-  <header class="site-header" id="top">
-    <div class="wrap nav-wrap">
-      <a href="index.html" class="brand" aria-label="BigBrother Analytics home"><span class="brand-mark"><span></span><span></span><span></span><span></span></span><span class="brand-name">BigBrother<span>Analytics</span></span></a>
-      <nav class="desktop-nav" aria-label="Primary navigation"><a href="#platform">Platform</a><a href="#what-we-do">What we do</a><a href="#solutions">Solutions</a><a href="#products">Products</a><a href="customers.html">Customers</a><a href="resources.html">Resources</a></nav>
-      <div class="nav-actions"><button class="text-button" data-theme-toggle type="button" aria-label="Toggle color theme"><span class="theme-icon">◐</span><span class="theme-label">Dark mode</span></button><a class="button button-small button-outline" href="schedule-demo.html">Sign in</a><a class="button button-small button-primary" href="#demo">Book a briefing <span>↗</span></a></div>
-      <button class="mobile-toggle" type="button" aria-label="Open navigation" aria-expanded="false" data-menu-toggle><span></span><span></span></button>
+<body>
+
+<header>
+  <nav class="wrap">
+    <a href="index.html" class="logo"><span class="dot">BB</span>BigBrother<span class="mut" style="font-weight:400">Analytics</span></a>
+    <div class="navlinks">
+      <a href="platform.html">Platform</a>
+      <a href="solutions.html">Solutions</a>
+      <div class="nav-dropdown">
+        <a href="products.html">Products</a>
+        <div class="dropdown-menu">
+          <a href="bb-white.html">BBA White</a>
+          <a href="ad-scanner.html">AdScanner</a>
+          <a href="prompt-engine.html">Prompt Engine</a>
+        </div>
+      </div>
+      <a href="pricing.html">Pricing</a>
+      <a href="customers.html">Customers</a>
+      <div class="nav-dropdown">
+        <a href="resources.html">Resources</a>
+        <div class="dropdown-menu">
+          <a href="resources.html">Blog</a>
+          <a href="resources.html">Case Studies</a>
+          <a href="resources.html">Documentation</a>
+        </div>
+      </div>
+      <a href="about.html">About</a>
     </div>
-    <div class="mobile-menu" data-mobile-menu><a href="#platform">Platform</a><a href="#what-we-do">What we do</a><a href="#solutions">Solutions</a><a href="#products">Products</a><a href="customers.html">Customers</a><a href="resources.html">Resources</a><a class="button button-primary" href="#demo">Book a briefing <span>↗</span></a></div>
-  </header>
-  <main>
-    <section class="hero-section"><div class="hero-grid-lines"></div><div class="wrap hero-wrap">
-      <div class="hero-copy reveal-up"><div class="eyebrow"><span class="eyebrow-dot"></span> Intelligence for the real world</div><h1>See the signal.<br /><em>Move before the market.</em></h1><p class="hero-lead">BigBrother turns the world’s conversations into a living intelligence layer for your business — across social, news, TV, video and the audiences behind it all.</p><div class="hero-actions"><a class="button button-primary button-large" href="#demo">See BigBrother in action <span>↗</span></a><a class="button button-ghost button-large" href="#what-we-do"><span class="play-icon">▶</span> How it works</a></div><div class="hero-proof"><span class="proof-pulse"></span><span>Trusted by teams across finance, media, government &amp; FMCG</span></div></div>
-      <div class="console-shell reveal-up delay-1" id="platform"><div class="console-topbar"><div class="window-controls"><i></i><i></i><i></i></div><div class="console-breadcrumb"><span>BigBrother</span><b>/</b><strong>Intelligence OS</strong></div><div class="console-status"><span class="live-dot"></span> Live workspace <span class="avatar">BB</span></div></div><div class="console-body"><aside class="console-sidebar"><div class="sidebar-logo"><span class="sidebar-logo-mark">BB</span><span>Analytics OS</span></div><div class="sidebar-label">Explore</div><button class="sidebar-item active"><span class="side-icon">⌂</span> Overview</button><button class="sidebar-item"><span class="side-icon">◌</span> News intelligence <b>Live</b></button><button class="sidebar-item"><span class="side-icon">◫</span> Video analytics</button><button class="sidebar-item"><span class="side-icon">▤</span> Reports</button><div class="sidebar-label sidebar-label-space">Workspaces</div><div class="workspace-item"><span class="workspace-icon blue"></span> Sudan</div><div class="workspace-item"><span class="workspace-icon violet"></span> Arab markets</div><div class="workspace-item"><span class="workspace-icon cyan"></span> Social health</div><div class="sidebar-footer"><span class="sidebar-logo-mark mini">BB</span> BigBrother Analytics</div></aside><div class="console-main"><div class="console-heading"><div><span class="console-kicker">AI-powered intelligence</span><h2>Command center</h2><p>One place to understand what is changing — and why it matters.</p></div><div class="console-heading-actions"><span class="mini-search">⌕ Search dashboards</span><button class="console-button">+ New report</button></div></div><div class="metric-row"><div class="metric-card"><span class="metric-icon cyan-bg">⌁</span><strong>5,568</strong><small>total conversations</small><b class="metric-up">+12,004%</b></div><div class="metric-card"><span class="metric-icon blue-bg">▤</span><strong>155,199</strong><small>interactions tracked</small><b class="metric-up">+687%</b></div><div class="metric-card"><span class="metric-icon gold-bg">◉</span><strong>3.1M</strong><small>video views analyzed</small><b class="metric-up">+42%</b></div><div class="metric-card"><span class="metric-icon green-bg">✓</span><strong>94%</strong><small>signal confidence</small><b class="metric-up">+8.2%</b></div></div><div class="console-chart-row"><div class="chart-card large-chart"><div class="chart-card-head"><div><b>Conversation momentum</b><span>Last 30 days · all monitored sources</span></div><span class="chart-chip">Live analysis</span></div><div class="spark-area"><svg viewBox="0 0 640 190" preserveAspectRatio="none" aria-hidden="true"><defs><linearGradient id="chartFill" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="#43d7e5" stop-opacity=".34"/><stop offset="1" stop-color="#43d7e5" stop-opacity="0"/></linearGradient></defs><path d="M0,147 C32,128 38,140 67,122 S100,136 127,110 S156,119 186,93 S213,112 246,85 S285,96 313,70 S352,93 381,56 S418,68 449,42 S481,82 510,63 S542,77 572,35 S612,52 640,18 L640,190 L0,190 Z" fill="url(#chartFill)"/><path d="M0,147 C32,128 38,140 67,122 S100,136 127,110 S156,119 186,93 S213,112 246,85 S285,96 313,70 S352,93 381,56 S418,68 449,42 S481,82 510,63 S542,77 572,35 S612,52 640,18" fill="none" stroke="#58e1ec" stroke-width="3" stroke-linecap="round"/></svg><div class="chart-axis"><span>May 01</span><span>May 08</span><span>May 15</span><span>May 22</span><span>May 30</span></div></div></div><div class="chart-card"><div class="chart-card-head"><div><b>Signal mix</b><span>Across all sources</span></div><span class="more">···</span></div><div class="signal-bars"><div><span>Positive</span><b style="width:72%;background:#30d7a1"></b><strong>62%</strong></div><div><span>Neutral</span><b style="width:44%;background:#f0b84b"></b><strong>28%</strong></div><div><span>Negative</span><b style="width:20%;background:#f16b78"></b><strong>10%</strong></div></div><div class="signal-note"><span>↗</span> Positive signal up <b>14%</b> this week</div></div></div></div></div><div class="console-tabs" role="tablist" aria-label="Product experience screens"><button class="console-tab active" data-console-tab="dashboard" role="tab" aria-selected="true"><span>◉</span> Dashboard</button><button class="console-tab" data-console-tab="news" role="tab" aria-selected="false"><span>◌</span> News Portal</button><button class="console-tab" data-console-tab="video" role="tab" aria-selected="false"><span>◫</span> Video Analytics</button><button class="console-tab" data-console-tab="reports" role="tab" aria-selected="false"><span>▤</span> Reports</button><button class="console-tab" data-console-tab="wall" role="tab" aria-selected="false"><span>▦</span> Video Wall</button></div><div class="screen-preview" aria-live="polite"><img class="preview-image active" data-console-image="dashboard" src="assets/img/console/dashboard.jpg" alt="BigBrother Analytics dashboard overview" /><img class="preview-image" data-console-image="news" src="assets/img/console/news-portal.jpg" alt="BigBrother Analytics news portal with sentiment analysis" /><img class="preview-image" data-console-image="video" src="assets/img/console/video-analytics.jpg" alt="BigBrother Analytics video analytics workspace" /><img class="preview-image" data-console-image="reports" src="assets/img/console/reports.jpg" alt="BigBrother Analytics report editor" /><img class="preview-image" data-console-image="wall" src="assets/img/console/video-wall.jpg" alt="BigBrother Analytics video wall layout builder" /><div class="preview-caption"><span class="live-dot"></span><span data-preview-label>Dashboard overview</span><span class="caption-arrow">↗</span></div></div></div>
-    </div><div class="hero-bottom-fade"></div></section>
-    <section class="logo-strip" aria-label="Trusted organizations"><div class="wrap logo-strip-inner"><span class="strip-label">The intelligence layer behind better decisions</span><div class="logo-list"><span>CIB</span><span>Google <i>MENA</i></span><span>Sanofi</span><span>AUC <i>Business</i></span><span>CC Plus</span><span>Al Ahly <i>Real Estate</i></span><span>GOLDMAN <i>SACHS</i></span></div></div></section>
-    <section class="section section-light" id="what-we-do"><div class="wrap"><div class="section-intro split-intro reveal-up"><div><span class="section-number">01 / What we do</span><h2>Make sense of the world<br /><em>before it makes sense to everyone else.</em></h2></div><p>We collect the signals your team cannot see alone, connect the patterns hiding across channels, and turn them into clear decisions — from the boardroom to the control room.</p></div><div class="workflow-grid"><article class="workflow-card workflow-card-feature reveal-up"><div class="workflow-orbit"><span class="orbit-core">BB</span><span class="orbit-node n1">social</span><span class="orbit-node n2">news</span><span class="orbit-node n3">TV</span><span class="orbit-node n4">video</span></div><div class="card-kicker">The BigBrother difference</div><h3>A single view of every conversation.</h3><p>Most tools show you a feed. We show you the forces shaping your market — normalized across social, news, TV, forums, video and the audiences behind it.</p><a href="platform.html" class="text-link">Meet the intelligence OS <span>↗</span></a></article><article class="workflow-card reveal-up delay-1"><span class="step-num">01</span><span class="workflow-icon icon-collect">⌁</span><div class="card-kicker">COLLECT &amp; NORMALIZE</div><h3>Listen everywhere.</h3><p>Bring social, news, TV, video, forums and reviews into one continuously refreshed view of the market.</p><div class="mini-feed"><span><i class="feed-dot cyan"></i> Social signals</span><b>4.2M / day</b><span><i class="feed-dot violet"></i> News articles</span><b>380K / day</b><span><i class="feed-dot gold"></i> Video views</span><b>3.1M / day</b></div></article><article class="workflow-card reveal-up delay-2"><span class="step-num">02</span><span class="workflow-icon icon-understand">✦</span><div class="card-kicker">UNDERSTAND WITH AI</div><h3>Find the pattern.</h3><p>Native Arabic and English NLP reveals sentiment, topics, entities, momentum, audience intent and the signals that matter.</p><div class="confidence-ring"><div><strong>94%</strong><span>signal confidence</span></div></div></article><article class="workflow-card reveal-up delay-3"><span class="step-num">03</span><span class="workflow-icon icon-act">↗</span><div class="card-kicker">ACT WITH CLARITY</div><h3>Move with context.</h3><p>Turn the answer into a board-ready report, an alert, a campaign decision or the next question your team should ask.</p><div class="action-stack"><span><i></i> Alert sent to leadership</span><span><i></i> Briefing exported to PDF</span><span><i></i> Campaign benchmark updated</span></div></article></div></div></section>
-    <section class="section section-dark" id="solutions"><div class="wrap"><div class="section-intro split-intro reveal-up"><div><span class="section-number section-number-light">02 / Solutions</span><h2>One intelligence engine.<br /><em>Every question that matters.</em></h2></div><p>From an early warning on a reputational risk to the audience segment most likely to convert, BigBrother helps teams replace assumptions with a clearer read of reality.</p></div><div class="solution-grid"><a href="solutions.html" class="solution-card solution-card-wide reveal-up"><div class="solution-card-top"><span class="solution-tag">01 · Competitive intelligence</span><span class="solution-arrow">↗</span></div><h3>Know your market<br /><em>as it moves.</em></h3><p>Track sectors, competitors and category shifts with normalized reports that make the noise legible.</p><div class="solution-visual market-visual"><div class="market-line"><span>Banking</span><b style="width:78%"></b><strong>+12%</strong></div><div class="market-line"><span>Real estate</span><b style="width:52%"></b><strong>+8%</strong></div><div class="market-line"><span>Telecom</span><b style="width:39%"></b><strong>+4%</strong></div><div class="market-line"><span>Retail</span><b style="width:64%"></b><strong>+10%</strong></div></div></a><a href="solutions.html" class="solution-card reveal-up delay-1"><div class="solution-card-top"><span class="solution-tag">02 · Brand &amp; crisis</span><span class="solution-arrow">↗</span></div><h3>Protect the brand<br /><em>before the headline.</em></h3><p>Catch sentiment shifts, coordinated activity and emerging threats while there is still time to respond.</p><div class="risk-visual"><div class="risk-score"><strong>8.4</strong><span>risk score</span></div><div class="risk-list"><span><i class="risk-red"></i>Unusual volume spike <b>+340%</b></span><span><i class="risk-gold"></i>Hashtag coordination <b>3 clusters</b></span><span><i class="risk-green"></i>Media pickup risk <b>Watching</b></span></div></div></a><a href="solutions.html" class="solution-card reveal-up delay-2"><div class="solution-card-top"><span class="solution-tag">03 · Audience intelligence</span><span class="solution-arrow">↗</span></div><h3>Meet people<br /><em>where they are.</em></h3><p>Map audience lifestyles and intent across the complete buying cycle — from awareness to purchase.</p><div class="funnel-visual"><div><span>Awareness</span><b style="width:95%">74%</b></div><div><span>Consideration</span><b style="width:71%">52%</b></div><div><span>Intent</span><b style="width:52%">38%</b></div><div><span>Purchase</span><b style="width:31%">21%</b></div></div></a></div></div></section>
-    <section class="section section-light" id="products"><div class="wrap"><div class="section-intro centered-intro reveal-up"><span class="section-number">03 / Product suite</span><h2>From the first signal<br /><em>to the final decision.</em></h2><p>Choose the surface your team needs. Every product is powered by the same intelligence engine underneath.</p></div><div class="product-showcase"><a class="product-tile tile-featured reveal-up" href="bb-white.html"><div class="tile-label">REPORTING / BBA WHITE <span>↗</span></div><h3>Make the invisible<br /><em>board-ready.</em></h3><p>White-label intelligence reports with the depth of a research team and the clarity of a decision memo.</p><div class="tile-report"><div class="report-top"><span>NEWS SENTIMENT BRIEFING</span><span>1 / 1</span></div><div class="report-title">What changed<br />this week?</div><div class="report-lines"><i></i><i></i><i></i></div><div class="report-footer"><span>BigBrother Analytics</span><b>Export PDF ↗</b></div></div></a><a class="product-tile reveal-up delay-1" href="ad-scanner.html"><div class="tile-label">ADVERTISING / ADSCANNER <span>↗</span></div><h3>See who is<br /><em>spending where.</em></h3><p>Track exposure, competitor activity and the stories ads create across channels.</p><div class="ad-bars"><span style="height:48%"></span><span style="height:76%"></span><span style="height:62%"></span><span style="height:92%"></span><span style="height:55%"></span><span style="height:70%"></span></div><div class="ad-axis"><span>TV</span><span>News</span><span>Social</span><span>Video</span><span>OOH</span><span>Search</span></div></a><a class="product-tile reveal-up delay-2" href="prompt-engine.html"><div class="tile-label">AI / PROMPT ENGINE <span>↗</span></div><h3>Ask better questions.<br /><em>Get sharper answers.</em></h3><p>Query millions of data points in natural language, with Arabic and English intelligence built in.</p><div class="prompt-window"><span class="prompt-user">You</span><b>What changed in banking sentiment this quarter?</b><span class="prompt-ai">BigBrother AI</span><p>Positive sentiment rose <strong>14%</strong>, led by digital banking adoption and rate-decision coverage.</p></div></a></div><div class="product-footnote reveal-up"><span class="footnote-spark">✦</span> Every product connects to the same normalized, continuously learning intelligence layer. <a href="platform.html">Explore the platform ↗</a></div></div></section>
-    <section class="section section-image" id="experience"><div class="wrap experience-grid"><div class="experience-copy reveal-up"><span class="section-number section-number-light">04 / The experience</span><h2>Not another dashboard.<br /><em>A better way to see.</em></h2><p>Designed for analysts, leaders and the people who need the answer next. Drill from a headline to the source, from a signal to the story, from a story to the decision.</p><div class="experience-list"><div><span>01</span><b>See the whole picture</b><p>Move between channels without losing context.</p></div><div><span>02</span><b>Follow the signal</b><p>Trace what changed back to the conversation underneath.</p></div><div><span>03</span><b>Share the answer</b><p>Turn insight into a briefing anyone can act on.</p></div></div><a href="platform.html" class="button button-primary">Explore the platform <span>↗</span></a></div><div class="experience-stage reveal-up delay-1"><div class="stage-glow"></div><div class="stage-card stage-card-back"><img src="assets/img/console/social-analytics.jpg" alt="Social media analytics dashboard" loading="lazy" /></div><div class="stage-card stage-card-front"><img src="assets/img/console/comments.jpg" alt="News intelligence comments and engagement view" loading="lazy" /><div class="stage-card-caption"><span class="live-dot"></span><span>Every story has a context</span></div></div><span class="floating-badge badge-one">Arabic + English NLP</span><span class="floating-badge badge-two">Live signal map <b>●</b></span></div></div></section>
-    <section class="section section-light industries-section"><div class="wrap"><div class="industry-head reveal-up"><div><span class="section-number">05 / Built for your world</span><h2>Whatever your market<br /><em>is saying, we can hear it.</em></h2></div><p>Monitor the categories where timing, context and trust create the difference between reacting and leading.</p></div><div class="industry-cloud reveal-up delay-1"><a href="solutions.html">Banking <span>↗</span></a><a href="solutions.html">Real estate</a><a href="solutions.html">Media</a><a href="solutions.html">Government</a><a href="solutions.html">Pharma</a><a href="solutions.html">Telecom</a><a href="solutions.html">Retail</a><a href="solutions.html">FMCG</a><a href="solutions.html">Sports</a><a href="solutions.html">Insurance</a><a href="solutions.html">Automotive</a><a href="solutions.html">Travel</a><a href="solutions.html">Education</a><a href="solutions.html">NGOs</a><a href="solutions.html">Entertainment</a><a href="solutions.html">Beauty</a></div></div></section>
-    <section class="section final-cta" id="demo"><div class="cta-grid"></div><div class="wrap cta-wrap"><div class="cta-copy reveal-up"><span class="eyebrow"><span class="eyebrow-dot"></span> Start with one question</span><h2>What is your market<br /><em>trying to tell you?</em></h2><p>Bring us the question your team cannot answer with a spreadsheet. We will show you what BigBrother can find.</p><div class="cta-proof"><span>●</span> Arabic + English NLP <span>●</span> Enterprise-ready <span>●</span> Built for MENA &amp; global markets</div></div><form class="briefing-form reveal-up delay-1" onsubmit="event.preventDefault();window.bbaSuccessButton(this.querySelector('button'),'Briefing request received')"><div class="form-label">REQUEST A PRIVATE BRIEFING</div><div class="form-row"><label><span>Full name</span><input required placeholder="Your name" /></label><label><span>Work email</span><input required type="email" placeholder="you@company.com" /></label></div><label><span>What are you trying to understand?</span><textarea rows="3" placeholder="Tell us about the market, audience or risk you want to see more clearly."></textarea></label><button class="button button-primary button-large" type="submit">Request my briefing <span>↗</span></button><small>We will only use your details to arrange the conversation.</small></form></div></section>
-  </main>
-  <footer class="site-footer"><div class="wrap"><div class="footer-top"><div class="footer-brand"><a href="#top" class="brand"><span class="brand-mark"><span></span><span></span><span></span><span></span></span><span class="brand-name">BigBrother<span>Analytics</span></span></a><p>AI-powered intelligence for businesses and governments that need to see what is changing.</p></div><div class="footer-links"><div><b>Platform</b><a href="platform.html">Intelligence OS</a><a href="#what-we-do">How it works</a><a href="#experience">The experience</a></div><div><b>Solutions</b><a href="solutions.html">Industry monitoring</a><a href="solutions.html">Brand listening</a><a href="solutions.html">Audience intelligence</a></div><div><b>Company</b><a href="about.html">About</a><a href="customers.html">Customers</a><a href="resources.html">Resources</a><a href="schedule-demo.html">Contact</a></div></div></div><div class="footer-bottom"><span>© 2026 BigBrother Analytics. All rights reserved.</span><div><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="https://www.linkedin.com/company/bigbrother-analytics-mena/">LinkedIn ↗</a></div></div></div></footer>
-  <script src="assets/js/landing.js" defer></script>
+    <div class="navcta">
+      <a href="schedule-demo.html" class="btn btn-ghost">Sign in</a>
+      <a href="schedule-demo.html" class="btn btn-primary">Schedule a Demo</a>
+    </div>
+    <button class="nav-toggle" aria-label="Toggle menu">
+      <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
+    </button>
+  </nav>
+  <div class="mobile-menu">
+    <div class="mobile-menu-inner wrap">
+      <a href="platform.html">Platform</a>
+      <a href="solutions.html">Solutions</a>
+      <a href="products.html">Products</a>
+      <a href="bb-white.html">BBA White</a>
+      <a href="ad-scanner.html">AdScanner</a>
+      <a href="prompt-engine.html">Prompt Engine</a>
+      <a href="pricing.html">Pricing</a>
+      <a href="customers.html">Customers</a>
+      <a href="resources.html">Resources</a>
+      <a href="about.html">About</a>
+      <div class="mobile-menu-cta">
+        <a href="schedule-demo.html" class="btn btn-ghost" style="width:100%;justify-content:center">Sign in</a>
+        <a href="schedule-demo.html" class="btn btn-primary" style="width:100%;justify-content:center">Schedule a Demo</a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- ============ HERO ============ -->
+<section class="hero">
+  <div class="grid-bg"></div>
+  <div class="wrap" style="position:relative;z-index:1;text-align:center">
+    <div class="badge reveal"><span class="pulse"></span> Intelligence for teams that need signal, not noise</div>
+    <h1 class="title reveal" style="margin:26px auto 26px;max-width:16ch">See what is changing. <span class="grad">Act before everyone else.</span></h1>
+    <p class="lead reveal" style="max-width:688px;margin:0 auto">BigBrother turns large, messy conversations into clear direction. Track industries, monitor brands, detect risk, and ask questions in Arabic or English  -  without losing the nuance.</p>
+    <div class="hero-actions reveal">
+      <a href="schedule-demo.html" class="btn btn-primary">Schedule a Demo →</a>
+      <a href="solutions.html" class="btn btn-ghost">Explore the platform</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ LOGO MARQUEE ============ -->
+<div class="strip">
+  <div class="wrap">
+    <div class="lbl">Trusted by leaders across finance, media, government & FMCG</div>
+  </div>
+  <div class="marquee">
+    <div class="track">
+      <span>CIB</span><span>Google MENA</span><span>Sanofi</span><span>Al Ahly Real Estate</span>
+      <span>AUC School of Business</span><span>CC Plus</span><span>Ahl Masr Foundation</span>
+      <span>Goldman Sachs</span><span>The Board Consulting</span><span>Alex Media Forum</span>
+      <span>CIB</span><span>Google MENA</span><span>Sanofi</span><span>Al Ahly Real Estate</span>
+      <span>AUC School of Business</span><span>CC Plus</span><span>Ahl Masr Foundation</span>
+      <span>Goldman Sachs</span><span>The Board Consulting</span><span>Alex Media Forum</span>
+    </div>
+  </div>
+</div>
+
+<!-- ============ STAT BAND ============ -->
+<section class="band">
+  <div class="wrap">
+    <div class="growth reveal">
+      <div>
+        <div class="head">Data intelligence that scales with your questions</div>
+      </div>
+      <div class="stats">
+        <div class="stat">
+          <div class="n">20+</div>
+          <div class="l">Industry verticals monitored across MENA</div>
+        </div>
+        <div class="stat">
+          <div class="n">10M+</div>
+          <div class="l">Data points processed per query</div>
+        </div>
+        <div class="stat">
+          <div class="n">AR + EN</div>
+          <div class="l">Full Arabic & English NLP out of the box</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ BENTO FEATURE CARDS ============ -->
+<section>
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="eyebrow">Solutions</div>
+      <h2>Everything you need to listen, understand and act</h2>
+      <p>Empower your business with the most accurate and relevant data  -  from brand listening to industry-wide intelligence.</p>
+    </div>
+    <div class="bento">
+
+      <!-- Card 1: Industry Monitoring -->
+      <div class="bcard reveal">
+        <div class="viz">
+          <div class="vhead"><span class="t">Industry Pulse</span><span class="live">Live</span></div>
+          <div class="tiles">
+            <div class="tile"><div class="k">Banking</div><div class="v">4,280</div><div class="d">↑ 12% vol</div></div>
+            <div class="tile"><div class="k">Real Estate</div><div class="v">2,910</div><div class="d">↑ 8% vol</div></div>
+          </div>
+          <div class="bars">
+            <span style="height:36%"></span><span style="height:48%"></span><span style="height:68%"></span>
+            <span style="height:60%"></span><span style="height:82%"></span><span style="height:74%"></span>
+            <span style="height:90%"></span><span style="height:68%"></span><span style="height:84%"></span>
+            <span style="height:100%"></span><span style="height:78%"></span><span style="height:56%"></span>
+          </div>
+        </div>
+        <div class="meta">
+          <h3>Industry Monitoring</h3>
+          <p>Track entire verticals with industry reports built from normalized online data  -  banking, real estate, media, pharma, retail, automotive and more.</p>
+        </div>
+      </div>
+
+      <!-- Card 2: Brand Listening -->
+      <div class="bcard reveal">
+        <div class="viz">
+          <div class="vhead"><span class="t">Brand Health</span></div>
+          <div class="kpi"><span class="l">Your brand</span><span class="meter"><i style="width:82%"></i></span><span class="v">82</span></div>
+          <div class="kpi"><span class="l">Competitor A</span><span class="meter"><i style="width:64%"></i></span><span class="v">64</span></div>
+          <div class="kpi"><span class="l">Competitor B</span><span class="meter"><i style="width:51%"></i></span><span class="v">51</span></div>
+          <div class="kpi"><span class="l">Sentiment</span><span class="meter"><i style="width:88%"></i></span><span class="v">88</span></div>
+        </div>
+        <div class="meta">
+          <h3>Brand Listening Report</h3>
+          <p>Listen to your brand's reputation and exposure across social media, and see how your competition is performing against you.</p>
+        </div>
+      </div>
+
+      <!-- Card 3: Prompt Engine / AI -->
+      <div class="bcard reveal">
+        <div class="viz">
+          <div class="vhead"><span class="t">Prompt Engine</span></div>
+          <div class="bub"><span class="who">Analyst</span>What's the sentiment breakdown for banking this quarter?</div>
+          <div class="bub me">Positive 62% · Neutral 28% · Negative 10%. Key driver: digital banking adoption up 34% QoQ.</div>
+          <div class="bub"><span class="who">Analyst</span>Compare to last quarter</div>
+        </div>
+        <div class="meta">
+          <h3>AI-Powered Prompt Engine</h3>
+          <p>Query millions of data pieces in natural language  -  including Arabic NLP  -  and get strategic answers in seconds.</p>
+        </div>
+      </div>
+
+      <!-- Card 4: TV Monitoring -->
+      <div class="bcard reveal">
+        <div class="viz">
+          <div class="vhead"><span class="t">TV Channels</span><span class="live">Live</span></div>
+          <div class="rowitem"><div class="txt"><div class="n">Channel A  -  Prime</div><div class="s">2.1M viewers · 18-45</div></div><span class="badge2 ok">High</span></div>
+          <div class="rowitem"><div class="txt"><div class="n">Channel B  -  News</div><div class="s">890K viewers · 25-55</div></div><span class="badge2 on">Mid</span></div>
+          <div class="rowitem"><div class="txt"><div class="n">Channel C  -  Sports</div><div class="s">1.4M viewers · 18-35</div></div><span class="badge2 ok">High</span></div>
+        </div>
+        <div class="meta">
+          <h3>TV Channels Monitoring</h3>
+          <p>Airing-grid and statistical modeling reveal who is watching what  -  connecting broadcast reach to the social conversation.</p>
+        </div>
+      </div>
+
+      <!-- Card 5: Buying Cycle -->
+      <div class="bcard reveal">
+        <div class="viz">
+          <div class="vhead"><span class="t">Buying Cycle</span></div>
+          <div class="tiles">
+            <div class="tile"><div class="k">Awareness</div><div class="v">74%</div><div class="d">↑ 6%</div></div>
+            <div class="tile"><div class="k">Consideration</div><div class="v">52%</div><div class="d">↑ 3%</div></div>
+            <div class="tile"><div class="k">Intent</div><div class="v">38%</div><div class="d">↑ 11%</div></div>
+            <div class="tile"><div class="k">Purchase</div><div class="v">21%</div><div class="d">↑ 9%</div></div>
+          </div>
+        </div>
+        <div class="meta">
+          <h3>Buying Cycle</h3>
+          <p>Map audiences and lifestyle segments across the full buying cycle to get strategic answers about the people who matter to your brand.</p>
+        </div>
+      </div>
+
+      <!-- Card 6: Crisis Detection -->
+      <div class="bcard reveal">
+        <div class="viz" style="background:linear-gradient(160deg,#fef5f5 0%,#fdf2f8 100%);border-color:rgba(240,68,56,.1)">
+          <div class="vhead"><span class="t">Crisis Detection</span><span style="display:inline-flex;align-items:center;gap:5px;font-size:11px;font-weight:600;color:var(--bad)"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 3 2.5 20h19L12 3Z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><path d="M12 9v4" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/><circle cx="12" cy="16.5" r="1" fill="currentColor"/></svg>Alert</span></div>
+          <div class="rowitem"><div class="txt"><div class="n">Unusual volume spike</div><div class="s">+340% in 2h · Negative sentiment</div></div><span class="badge2 hot">Critical</span></div>
+          <div class="rowitem"><div class="txt"><div class="n">Hashtag coordination</div><div class="s">3 clusters detected</div></div><span class="badge2 warn">Watch</span></div>
+          <div class="rowitem"><div class="txt"><div class="n">Media pickup risk</div><div class="s">Score: 8.4 / 10</div></div><span class="badge2 hot">High</span></div>
+        </div>
+        <div class="meta">
+          <h3>Crisis Detection</h3>
+          <p>Detect sudden changes in conversation or critical actions the moment they happen  -  predict whether a PR crisis is about to unfold.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ HOW IT WORKS  -  3 STEPS ============ -->
+<section class="band">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="eyebrow">How it works</div>
+      <h2>From raw data to strategic direction</h2>
+      <p>Built and battle-tested over years of real analysis  -  from a full control-room system to a subscription platform powered by tens of AI algorithms.</p>
+    </div>
+    <div class="steps">
+
+      <div class="stepcard reveal">
+        <div class="viz">
+          <div class="vhead"><span class="t">Data Collection</span><span class="live">Live</span></div>
+          <div class="tiles">
+            <div class="tile"><div class="k">Social</div><div class="v">4.2M</div><div class="d">posts / day</div></div>
+            <div class="tile"><div class="k">News</div><div class="v">380K</div><div class="d">articles / day</div></div>
+          </div>
+          <div class="bars">
+            <span style="height:50%"></span><span style="height:70%"></span><span style="height:55%"></span>
+            <span style="height:85%"></span><span style="height:65%"></span><span style="height:100%"></span>
+            <span style="height:75%"></span><span style="height:90%"></span>
+          </div>
+        </div>
+        <div class="meta">
+          <div class="step-n">Step 01</div>
+          <h3>Collect & Normalize</h3>
+          <p>We gather data from social platforms, news outlets, TV broadcasts, and forums  -  then normalize it so every source speaks the same language.</p>
+        </div>
+      </div>
+
+      <div class="stepcard reveal">
+        <div class="viz">
+          <div class="vhead"><span class="t">AI Analysis</span></div>
+          <div class="rowitem"><div class="txt"><div class="n">Sentiment Analysis</div><div class="s">Arabic + English NLP</div></div><span class="badge2 ok">Active</span></div>
+          <div class="rowitem"><div class="txt"><div class="n">Topic Clustering</div><div class="s">Auto-categorization</div></div><span class="badge2 on">Running</span></div>
+          <div class="rowitem"><div class="txt"><div class="n">Trend Detection</div><div class="s">Real-time signals</div></div><span class="badge2 ok">Active</span></div>
+        </div>
+        <div class="meta">
+          <div class="step-n">Step 02</div>
+          <h3>Analyze with AI</h3>
+          <p>Tens of AI algorithms process the data  -  sentiment, topic clustering, trend detection, crisis prediction  -  all with native Arabic and English NLP.</p>
+        </div>
+      </div>
+
+      <div class="stepcard reveal">
+        <div class="viz">
+          <div class="vhead"><span class="t">Strategic Output</span></div>
+          <div class="bub"><span class="who">BigBrother AI</span>Banking sector sentiment shifted +14% positive this week. Key driver: CBE interest rate decision coverage.</div>
+          <div class="bub me">Show me the competitor breakdown</div>
+          <div style="margin-top:auto"><span class="foot">Export as PDF · Share with team</span></div>
+        </div>
+        <div class="meta">
+          <div class="step-n">Step 03</div>
+          <h3>Act on Insights</h3>
+          <p>Get clear reports, real-time dashboards, and natural-language answers you can act on  -  share with your board or feed directly into campaigns.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ PRODUCT EXPERIENCE SHOWCASE ============ -->
+<section class="band showcase-band" id="showcase">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="eyebrow">Inside the platform</div>
+      <h2>See the intelligence your team works with every day</h2>
+      <p>BigBrother brings analysis, monitoring, reporting and visual storytelling into one connected workspace. Each surface is designed to answer a different business question while keeping the context, evidence and next action close at hand.</p>
+    </div>
+    <div class="screen-showcase">
+      <article class="screen-card screen-card-wide reveal">
+        <div class="screen-card-image"><img src="assets/img/console/dashboard.jpg" alt="BigBrother Analytics dashboard showing key metrics, charts and workspaces" loading="lazy"><span class="screen-label">01 · Command center</span></div>
+        <div class="screen-card-copy"><div class="kicker">Dashboard intelligence</div><h3>Start with the complete picture.</h3><p>The dashboard gives leadership and analysts a shared view of what is happening across monitored markets. Track conversations, interactions, video reach, sentiment and project health in one place, then drill into the workspace that needs attention.</p><div class="screen-points"><span>Live KPIs and trend movement</span><span>Workspace-level monitoring</span><span>Custom charts and filters</span></div></div>
+      </article>
+      <article class="screen-card reveal">
+        <div class="screen-card-image"><img src="assets/img/console/news-portal.jpg" alt="BigBrother Analytics news portal with article sentiment analysis" loading="lazy"><span class="screen-label">02 · News portal</span></div>
+        <div class="screen-card-copy"><div class="kicker">News intelligence</div><h3>Know what the news is really saying.</h3><p>Monitor relevant stories as they break, see the tone and engagement around each article, and move from a headline to the source behind it. AI summaries help teams understand the signal without reading every article manually.</p></div>
+      </article>
+      <article class="screen-card reveal">
+        <div class="screen-card-image"><img src="assets/img/console/video-analytics.jpg" alt="BigBrother Analytics video analytics with sentiment and engagement metrics" loading="lazy"><span class="screen-label">03 · Video analytics</span></div>
+        <div class="screen-card-copy"><div class="kicker">Video intelligence</div><h3>See how every video lands.</h3><p>Transcribe, summarize and analyze video content with sentiment, views, reactions and comments in the same view. Understand which moments drive engagement and how audiences respond across languages.</p></div>
+      </article>
+      <article class="screen-card reveal">
+        <div class="screen-card-image"><img src="assets/img/console/reports.jpg" alt="BigBrother Analytics report editor for creating a news sentiment briefing" loading="lazy"><span class="screen-label">04 · Reports</span></div>
+        <div class="screen-card-copy"><div class="kicker">Decision-ready reporting</div><h3>Turn evidence into a briefing.</h3><p>Build polished reports from the intelligence you have already collected. Combine narrative, charts and key findings into a clear document that can be reviewed, exported and shared with decision-makers.</p></div>
+      </article>
+      <article class="screen-card reveal">
+        <div class="screen-card-image"><img src="assets/img/console/video-wall.jpg" alt="BigBrother Analytics video wall layout and content configuration" loading="lazy"><span class="screen-label">05 · Video wall</span></div>
+        <div class="screen-card-copy"><div class="kicker">Control-room visibility</div><h3>Make intelligence visible at scale.</h3><p>Configure screen grids, assign dashboards and distribute the right cards to the right display. Video Wall turns your intelligence layer into an operational view for teams that need live awareness.</p></div>
+      </article>
+    </div>
+    <div class="screen-utility-grid">
+      <article class="screen-utility-card reveal"><img src="assets/img/console/comments.jpg" alt="BigBrother Analytics comments and engagement analysis" loading="lazy"><div><div class="kicker">Comments &amp; engagement</div><h3>Go from reach to reaction.</h3><p>See the comments, reactions and discussion underneath the content so your team understands not only what travelled, but what it caused.</p></div></article>
+      <article class="screen-utility-card reveal"><img src="assets/img/console/home.jpg" alt="BigBrother Analytics home workspace" loading="lazy"><div><div class="kicker">Home workspace</div><h3>Keep every priority in view.</h3><p>Bring your most important workspaces, alerts and reporting shortcuts together so the next question is always easy to reach.</p></div></article>
+      <article class="screen-utility-card reveal"><img src="assets/img/console/social-analytics.jpg" alt="BigBrother Analytics social media analytics view" loading="lazy"><div><div class="kicker">Social analytics</div><h3>Understand the conversation behind the number.</h3><p>Compare channels, audiences and content performance to reveal the patterns that shape brand health and campaign momentum.</p></div></article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ USE CASES ============ -->
+<section>
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="eyebrow">Use cases</div>
+      <h2>One engine, every industry vertical</h2>
+      <p>BigBrother monitors industries across the board  -  normalizing online data into reports you can trust and act on.</p>
+    </div>
+    <div class="ucgrid">
+
+      <div class="uc reveal">
+        <div class="viz" style="min-height:180px;align-items:center;justify-content:center">
+          <div class="chips" style="justify-content:center">
+            <span class="chip on">Banking</span><span class="chip">Insurance</span><span class="chip on">Real Estate</span>
+            <span class="chip">Telecom</span><span class="chip on">Pharma</span><span class="chip">CPG</span>
+          </div>
+        </div>
+        <div class="meta">
+          <div class="kicker">Use case <span class="ind">· Competitive Intelligence</span></div>
+          <h3>Market & Competitor Monitoring</h3>
+          <p>Track entire industries and benchmark your brand against competitors with normalized reports built from millions of data points.</p>
+        </div>
+      </div>
+
+      <div class="uc reveal">
+        <div class="viz" style="min-height:180px;align-items:center;justify-content:center">
+          <div class="chips" style="justify-content:center">
+            <span class="chip on">Media</span><span class="chip">Sports</span><span class="chip on">Entertainment</span>
+            <span class="chip">Government</span><span class="chip on">NGOs</span>
+          </div>
+        </div>
+        <div class="meta">
+          <div class="kicker">Use case <span class="ind">· Reputation & Crisis</span></div>
+          <h3>Brand Safety & Crisis Response</h3>
+          <p>Detect sudden changes in conversation, predict PR crises before they unfold, and respond with data-backed strategy  -  not gut feeling.</p>
+        </div>
+      </div>
+
+      <div class="uc reveal">
+        <div class="viz" style="min-height:180px;align-items:center;justify-content:center">
+          <div class="chips" style="justify-content:center">
+            <span class="chip on">Travel</span><span class="chip">Retail</span><span class="chip on">Automotive</span>
+            <span class="chip">Beauty</span><span class="chip on">Food & Drink</span>
+          </div>
+        </div>
+        <div class="meta">
+          <div class="kicker">Use case <span class="ind">· Consumer Insights</span></div>
+          <h3>Audience & Buying Cycle</h3>
+          <p>Map lifestyle segments across the full buying cycle  -  awareness to purchase  -  to build campaigns that meet people where they are.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ PRODUCTS ============ -->
+<section class="band">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="eyebrow">Products</div>
+      <h2>A suite that scales with your questions</h2>
+    </div>
+    <div class="prod">
+      <div class="pcard reveal">
+        <div class="tag">Reporting</div>
+        <h3>BBA White</h3>
+        <p>Enterprise-grade, white-labeled intelligence reports built from normalized online data  -  ready to share with your board.</p>
+        <a href="bb-white.html">Learn more →</a>
+      </div>
+      <div class="pcard reveal">
+        <div class="tag">Advertising</div>
+        <h3>AdScanner</h3>
+        <p>Track advertising and competitor exposure across channels to see who is spending where, and how it moves the conversation.</p>
+        <a href="ad-scanner.html">Learn more →</a>
+      </div>
+      <div class="pcard reveal">
+        <div class="tag">AI</div>
+        <h3>Prompt Engine</h3>
+        <p>Query millions of data pieces in natural language  -  including Arabic NLP  -  and get strategic answers in seconds.</p>
+        <a href="prompt-engine.html">Learn more →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TESTIMONIALS ============ -->
+<section id="customers">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="eyebrow">Customers</div>
+      <h2>Trusted by decision-makers who don't guess</h2>
+    </div>
+    <div class="tgrid">
+      <div class="quote reveal"><p>"BigBrother provides accurate, collective and very insightful data which we found mandatory for our business. BB reports provided a wealth of records, statistics and ultimately relevant knowledge."</p>
+        <div class="who"><span class="av">LK</span><span><b>Lamia Kamel</b><small>CEO, CC Plus</small></span></div></div>
+      <div class="quote reveal"><p>"I am amazed by this analytics engine. This is the first time I can trust that there is an AI program capable of collecting millions of data pieces and making sense of them."</p>
+        <div class="who"><span class="av">AN</span><span><b>Ahmed Nazmy</b><small>CEO, The Board Consulting</small></span></div></div>
+      <div class="quote reveal"><p>"A great tool that digs deep  -  an eye opener that gives the user a wealth of information about the targeted audience and their behaviour."</p>
+        <div class="who"><span class="av">MA</span><span><b>Mai Aly</b><small>CMO, TNC · Al Ahly Real Estate</small></span></div></div>
+      <div class="quote reveal"><p>"BigBrother Analytics has enlightened our understanding of why different people support charity for different reasons."</p>
+        <div class="who"><span class="av">HE</span><span><b>Heba El Sewedy</b><small>Founder & Chairperson, Ahl Masr Foundation</small></span></div></div>
+      <div class="quote reveal"><p>"BigBrother is a great tool for analyzing vast amounts of data in an efficient way."</p>
+        <div class="who"><span class="av">WF</span><span><b>Wael Fakhrany</b><small>Regional Director, Google MENA</small></span></div></div>
+      <div class="quote reveal"><p>"Big Brother Analytics is timely and innovative. Moving forward, it is all about people, data, and innovative technologies."</p>
+        <div class="who"><span class="av">SK</span><span><b>Dr. Sherif Kamel</b><small>Dean, AUC School of Business</small></span></div></div>
+      <div class="quote reveal"><p>"One of the most effective tools we have used so far. Its AI/NLP technology in Arabic and business analytics tools provide a real competitive edge."</p>
+        <div class="who"><span class="av">SA</span><span><b>Sherif Alexan</b><small>Former Director, Goldman Sachs</small></span></div></div>
+      <div class="quote reveal"><p>"We always lacked proper analysis. I believe it was a game changer to all industries."</p>
+        <div class="who"><span class="av">ND</span><span><b>Nibal Dahaba</b><small>GM, Sanofi Pasteur Egypt</small></span></div></div>
+      <div class="quote reveal"><p>"The BigBrother Analytics system has been an eye opener for us to map and understand what's going on in social media."</p>
+        <div class="who"><span class="av">LE</span><span><b>Lamis El Hadidi</b><small>Journalist & TV Presenter</small></span></div></div>
+      <div class="quote reveal"><p>"The Big Brother platform allowed us to do rapid prototyping with a wide variety of algorithms."</p>
+        <div class="who"><span class="av">IZ</span><span><b>Islam Zikry</b><small>Chief Data Officer, CIB</small></span></div></div>
+      <div class="quote reveal"><p>"In a data-driven world, Big Brother as a deep analytical system is crucial for better decision-making."</p>
+        <div class="who"><span class="av">AE</span><span><b>Ahmed Esmat</b><small>Alex Media Forum</small></span></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section class="band">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="eyebrow">FAQ</div>
+      <h2>Questions we hear often</h2>
+    </div>
+    <div class="faq reveal">
+      <div class="faq-item">
+        <button class="faq-q">What data sources does BigBrother monitor?<svg class="faq-ico" width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M5 7.5l5 5 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+        <div class="faq-a"><p>We collect and normalize data from social media platforms, news outlets, TV broadcasts, forums, blogs, and review sites  -  covering Arabic and English content across MENA and global markets.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">Does BigBrother support Arabic NLP?<svg class="faq-ico" width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M5 7.5l5 5 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+        <div class="faq-a"><p>Yes  -  Arabic NLP is built into every layer of the platform. Sentiment analysis, topic clustering, entity recognition, and natural-language querying all work natively in Arabic and English.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">How is BigBrother different from social listening tools?<svg class="faq-ico" width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M5 7.5l5 5 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+        <div class="faq-a"><p>BigBrother goes beyond social listening  -  we normalize data across social, news, TV, and forums into industry-level intelligence. We don't just tell you what people are saying; we tell you what it means for your business.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">What industries do you cover?<svg class="faq-ico" width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M5 7.5l5 5 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+        <div class="faq-a"><p>Over 20 verticals  -  banking, real estate, media, pharma, CPG, retail, automotive, telecom, travel, sports, entertainment, education, insurance, software, and more. If there's online conversation about it, we can monitor it.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">Can I try BigBrother before committing?<svg class="faq-ico" width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M5 7.5l5 5 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+        <div class="faq-a"><p>Absolutely. Schedule a demo and we'll walk you through the platform tailored to your industry. We also offer pilot programs so you can evaluate the data quality before scaling.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CTA / DEMO ============ -->
+<section id="demo">
+  <div class="wrap">
+    <div class="cta reveal">
+      <div>
+        <div class="eyebrow">Schedule a Demo</div>
+        <h2>See BigBrother analyze your world.</h2>
+        <p>Tell us a little about you and we'll set up a walkthrough of the platform, tailored to your industry and the questions you need answered.</p>
+        <div class="trust" style="margin-top:8px">
+          <div><b>Arabic + English NLP</b></div>
+          <div><b>Enterprise-ready</b></div>
+        </div>
+      </div>
+      <form onsubmit="event.preventDefault();window.bbaSuccessButton(this.querySelector('.btn'),'We\'ll be in touch')">
+        <div class="frow">
+          <input required placeholder="Full name">
+          <input required placeholder="Job title">
+        </div>
+        <div class="frow">
+          <input required type="email" placeholder="Business email">
+          <input required placeholder="Mobile number">
+        </div>
+        <div class="frow">
+          <input placeholder="Country">
+          <select>
+            <option value="">Interested in…</option>
+            <option>BBA White</option><option>AdScanner</option><option>Prompt Engine</option>
+            <option>Industry Monitoring</option><option>Brand Listening</option>
+          </select>
+        </div>
+        <button class="btn btn-primary">Request my demo</button>
+        <div class="fnote">No spam. We'll only use your details to arrange the demo.</div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="fgrid">
+      <div>
+        <a href="index.html" class="logo" style="margin-bottom:14px"><span class="dot">BB</span>BigBrother<span class="mut" style="font-weight:400">Analytics</span></a>
+        <p class="mut" style="font-size:14px;max-width:280px">AI-powered data intelligence for businesses and governments. We collect, analyze, and visualize the data that matters for you.</p>
+      </div>
+      <div>
+        <h4>Platform</h4>
+        <a href="solutions.html">Industry Monitoring</a><a href="solutions.html">Brand Listening</a>
+        <a href="solutions.html">TV Monitoring</a><a href="solutions.html">Buying Cycle</a>
+      </div>
+      <div>
+        <h4>Products</h4>
+        <a href="bb-white.html">BBA White</a><a href="ad-scanner.html">AdScanner</a>
+        <a href="prompt-engine.html">Prompt Engine</a><a href="pricing.html">Pricing</a>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <a href="customers.html">Customers</a><a href="resources.html">Resources</a>
+        <a href="about.html">About</a><a href="schedule-demo.html">Schedule a Demo</a>
+      </div>
+    </div>
+    <div class="fbottom">
+        <div>&copy; 2026 BigBrother Analytics & its derivatives. All rights reserved.</div>
+      <div class="soc">
+        <a href="https://www.facebook.com/bigbrotheranalytics/">Facebook</a><a href="https://www.linkedin.com/company/bigbrother-analytics-mena/">LinkedIn</a>
+        <a href="terms.html">Terms</a><a href="privacy.html">Privacy</a><a href="https://bigbrotheranalytics.com/bba-gdpr-compliance/">GDPR</a><a href="sitemap.html">Sitemap</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/main.js" defer></script>
 </body>
 </html>
